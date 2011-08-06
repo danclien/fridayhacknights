@@ -1,0 +1,24 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Badge:
+  fields:
+    default: hacker_id, badge_type, hacker
+    form: hacker, badge_type, hacker
+  order_by: 
+  relationships: badge_type, hacker
+  filters: created_at
+  search: 
+  application: fridayhacknights
+
+BadgeType:
+  fields:
+    default: name, goal, rank
+    form: name, goal, rank
+  order_by: 
+  relationships: badges
+  filters: created_at
+  search: name
+  application: fridayhacknights
+
