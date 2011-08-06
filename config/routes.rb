@@ -1,5 +1,7 @@
 Fridayhacknights::Application.routes.draw do
 
+  resources :badges
+
   post "projects/:id/checkin" => 'projects#check_in', :as => :check_in
   get "gallery/index"
 
