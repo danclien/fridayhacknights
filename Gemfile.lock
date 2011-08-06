@@ -114,10 +114,10 @@ PLATFORMS
 
 DEPENDENCIES
   carrierwave
-  httparty
-  rafaels-picasa
   devise
+  httparty
   inherited_resources
+  rafaels-picasa
   rails (= 3.0.9)
   slim
   sqlite3
