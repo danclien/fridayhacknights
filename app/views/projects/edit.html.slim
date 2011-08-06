@@ -1,0 +1,7 @@
+.form_box.form_box_wide
+  h1 Edit #{@project.name}
+
+  = render 'form'  
+  = link_to 'Show', @project 
+  br
+  = link_to 'Back', projects_path 
