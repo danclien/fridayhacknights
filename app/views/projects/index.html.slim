@@ -1,0 +1,10 @@
+.grid_12
+  h1 Projects
+  
+  = link_to 'New Project', new_project_path
+
+  - @projects.each do |project|
+    .project
+      h2 = link_to project.name, project_path(project)
+      .desc #{project.description}
+
