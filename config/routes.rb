@@ -1,9 +1,9 @@
 Fridayhacknights::Application.routes.draw do
+  devise_for :hackers
+
   get "home/index"
 
   resources :projects
-
-  resources :hackers
 
   resources :events
 

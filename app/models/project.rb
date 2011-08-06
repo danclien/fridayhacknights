@@ -1,3 +1,6 @@
 class Project < ActiveRecord::Base
-  belongs_to :event
+  has_one :owner, :class_name => :hacker
+  
+  has_many :events, :through => :checkins
+  has_many :hackers, :through => :checkins
 end
