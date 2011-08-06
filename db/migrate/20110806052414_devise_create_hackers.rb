@@ -4,6 +4,7 @@ class DeviseCreateHackers < ActiveRecord::Migration
       t.string :name
       t.string :skills
       t.string :website
+      t.references :project
 
       # devise
       t.database_authenticatable :null => false

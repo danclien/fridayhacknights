@@ -9,10 +9,6 @@ Fridayhacknights::Application.routes.draw do
 
   resources :events
 
-  ActiveAdmin.routes(self)
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
-
   root :to => "home#index"
 
   match 'gallery/:id' => 'gallery#show'

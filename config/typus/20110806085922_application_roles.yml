@@ -1,0 +1,9 @@
+# Typus Roles Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+admin:
+  Checkin: create, read, update, delete
+  Event: create, read, update, delete
+  Hacker: create, read, update, delete
+  Project: create, read, update, delete
