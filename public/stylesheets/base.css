@@ -171,6 +171,8 @@ ul.created_by li {
 .project.show .hackers-involved {
   padding: 0;
   list-style: none; }
+  .project.show .hackers-involved a {
+    text-decoration: none; }
 .project.show .hackers-involved li {
   background-color: #536886;
   -moz-border-radius: 3px;
@@ -183,5 +185,13 @@ ul.created_by li {
   margin: 3px 5px;
   padding: 0.2em 0.5em;
   list-style: none; }
+
+.project-hackers {
+  margin: 0.5em 0em 0em 0em;
+  font-size: 0.9em; }
+
+.project-hackers .hacker {
+  font-size: 0.9em;
+  margin: 3px 5px; }
 
 /* @end */

@@ -241,6 +241,9 @@ ul.created_by li {
 	.hackers-involved {
 		padding: 0; 
 		list-style: none;
+		a {
+		  text-decoration: none;
+		}
 	}
 	.hackers-involved li {
 		@include list-box;
@@ -249,6 +252,17 @@ ul.created_by li {
 		padding: 0.2em 0.5em;
 		list-style: none;
 	}
+	
+}
+
+.project-hackers {
+  margin: 0.5em 0em 0em 0em;
+  font-size: 0.9em;
+}
+
+.project-hackers .hacker {
+  font-size: 0.9em;
+  margin: 3px 5px;
 }
 
 /* @end */

@@ -25,8 +25,9 @@
 
     ul.hackers-involved
       - @hackers_involved.each do |hacker|
-        li
-          .name = hacker.name
+        a href=hacker_path(hacker)
+          li
+            .name = hacker.name
       li.clear
     .clear
 
