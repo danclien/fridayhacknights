@@ -7,4 +7,10 @@
     .project.list-item
       h2 = link_to project.name, project_path(project)
       .desc #{project.description}
+      ul.hackers-involved
+        - project.hackers.each do |hacker|
+          li
+            .name = hacker.name
+        li.clear
+      .clear      
 

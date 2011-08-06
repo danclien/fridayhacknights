@@ -154,6 +154,7 @@ a:hover {
   top: -5px; }
 
 /* @end */
+
 /* @group Projects */
 .project.list-item {
   background-color: #536886;
@@ -171,9 +172,11 @@ a:hover {
 .project.show .website {
   font-size: 0.5em;
   padding-left: 0.5em; }
+  
 .project.show .hackers-involved {
   padding: 0;
   list-style: none; }
+  
 .project.show .hackers-involved li {
   background-color: #536886;
   -moz-border-radius: 3px;

@@ -1,33 +1,35 @@
-p#notice = notice
+.grid_12
 
-.project.show
+  p#notice = notice
 
-  - if hacker_signed_in?
-    = form_tag check_in_path(@project) do
-      = submit_tag 'Check In'
+  .project.show
 
-  - if @hacker_is_owner
+    - if hacker_signed_in?
+      = form_tag check_in_path(@project) do
+        = submit_tag 'Check In'
+
+    - if @hacker_is_owner
+      = link_to 'Edit', edit_project_path(@project)
+      br
+      = link_to 'Destroy', @project, :confirm => 'Are you sure?', :method => :delete
+
+    h1
+      = @project.name
+      - if @project.website
+        span.website = link_to 'Project Website', @project.website
+
+    p.description
+      = @project.description
+
+    h3 Hackers Involved:
+
+    ul.hackers-involved
+      - @hackers_involved.each do |hacker|
+        li
+          .name = hacker.name
+      li.clear
+    .clear
+
     = link_to 'Edit', edit_project_path(@project)
-    br
-    = link_to 'Destroy', @project, :confirm => 'Are you sure?', :method => :delete
-
-  h1
-    = @project.name
-    - if @project.website
-      span.website = link_to 'Project Website', @project.website
-
-  p.description
-    = @project.description
-
-  h3 Hackers Involved:
-
-  ul.hackers-involved
-    - @hackers_involved.each do |hacker|
-      li
-        .name = hacker.name
-    li.clear
-  .clear
-
-  = link_to 'Edit', edit_project_path(@project)
-  | &nbsp;
-  = link_to 'Back', projects_path
+    | &nbsp;
+    = link_to 'Back', projects_path
