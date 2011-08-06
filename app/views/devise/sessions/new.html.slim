@@ -10,7 +10,7 @@ section class="form_box"
       br/
       = f.password_field :password
     - if devise_mapping.rememberable?
-      p
+      p class="remember_me_box"
         = f.check_box :remember_me
         = f.label :remember_me
     p= f.submit "Sign in"
