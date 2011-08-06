@@ -93,6 +93,7 @@ GEM
     render_inheritable (1.0.0)
       rails (~> 3.0)
     responders (0.6.4)
+    sass (3.1.7)
     slim (0.9.4)
       temple (~> 0.3.0)
       tilt (~> 1.2)
@@ -119,6 +120,7 @@ DEPENDENCIES
   inherited_resources
   rafaels-picasa
   rails (= 3.0.9)
+  sass
   slim
   sqlite3
   typus!

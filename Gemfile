@@ -8,6 +8,7 @@ gem 'typus', :git => 'git://github.com/typus/typus.git'
 
 gem 'carrierwave'
 gem 'slim'
+gem 'sass'
 
 gem 'httparty'
 gem 'rafaels-picasa', :require => "picasa"
