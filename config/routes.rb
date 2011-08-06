@@ -1,4 +1,6 @@
 Fridayhacknights::Application.routes.draw do
+  get "gallery/index"
+
   devise_for :hackers
 
   get "home/index"
