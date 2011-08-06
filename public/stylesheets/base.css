@@ -132,8 +132,21 @@ a:hover {
   margin: 1em auto 1em auto;
   width: 300px; }
 
-.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit] {
-  width: 300px; }
+.form_box_wide {
+	width: 600px;
+}
+
+.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit]{
+	width: 300px;
+}
+
+.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit]{
+	width: 600px;
+}
+
+#project_description {
+	height: 150px;
+}
 
 .remember_me_box label {
   margin-left: 0.5em;
