@@ -1,4 +1,6 @@
 Fridayhacknights::Application.routes.draw do
+
+  post "projects/:id/checkin" => 'projects#check_in', :as => :check_in
   get "gallery/index"
 
   devise_for :hackers

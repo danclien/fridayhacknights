@@ -1,8 +1,13 @@
 p#notice = notice
 
+- if hacker_signed_in?
+  = form_tag check_in_path(@project) do
+    = submit_tag 'Check In'
+
 - if @hacker_is_owner
-  td = link_to 'Edit', edit_project_path(@project)
-  td = link_to 'Destroy', @project, :confirm => 'Are you sure?', :method => :delete
+  = link_to 'Edit', edit_project_path(@project)
+  br
+  = link_to 'Destroy', @project, :confirm => 'Are you sure?', :method => :delete
 p
   b Title:
   = @project.name
@@ -11,5 +16,5 @@ p
   = @project.description
 
 = link_to 'Edit', edit_project_path(@project)
-|
+br
 = link_to 'Back', projects_path

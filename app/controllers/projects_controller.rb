@@ -12,4 +12,22 @@ class ProjectsController < InheritedResources::Base
     @project.owner = current_hacker
     create!
   end
+
+  def check_in
+    project = Project.find params[:id]
+
+    if project.nil?
+      return show! :alert => 'Invalid project'
+    end
+
+    # TODO: check for existing checkin
+
+    success = Checkin.create! \
+      :hacker => current_hacker,
+      :project_id => params[:id],
+      # TODO: make sure this is the actual current event
+      :event => Event.last
+
+    redirect_to project_path(project), :notice => 'Checked in successfully.'
+  end
 end
