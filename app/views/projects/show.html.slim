@@ -15,6 +15,11 @@ p
   b Description:
   = @project.description
 
+h3 Hackers Involved:
+
+- @hackers_involved.each do |hacker|
+  p = hacker.name
+
 = link_to 'Edit', edit_project_path(@project)
 br
 = link_to 'Back', projects_path

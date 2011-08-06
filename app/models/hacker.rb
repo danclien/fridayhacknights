@@ -1,6 +1,7 @@
 class Hacker < ActiveRecord::Base
   has_many :owned_projects, :class_name => :project
   
+  has_many :checkins
   has_many :events, :through => :checkins
   has_many :projects, :through => :checkins
 
