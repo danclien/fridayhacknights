@@ -1,7 +1,8 @@
 .grid_12
   h1 Projects
   
-  = link_to 'New Project', new_project_path
+  - if hacker_signed_in?
+    = link_to 'New Project', new_project_path
 
   - @projects.each do |project|
     .project.list-item
