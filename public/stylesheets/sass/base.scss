@@ -205,6 +205,14 @@ ul.created_by li {
 	width: 300px;
 }
 
+.form_box_wide {
+	width: 600px;
+}
+
+.form_box_wide input[type=text], .form_box_wide input[type=email], .form_box_wide input[type=password], .form_box_wide input[type=submit]{
+	width: 600px;
+}
+
 .remember_me_box label {
 	margin-left: 0.5em;
 	position: relative;
