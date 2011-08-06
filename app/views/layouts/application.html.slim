@@ -10,31 +10,33 @@ html
     = javascript_include_tag "jquery.formalize"
     = csrf_meta_tag
   body
-    .nav_holder
-      .container_12
-        nav class="grid_12 site_nav"
-          ul class="site_nav_list"
-            erb:
-              <li><a href="/">Home</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/hackers">Hackers</a></li>
-          ul class="site_nav_account"
-            li
-              = link_to 'Sign in', :new_hacker_session
-            li
-              = link_to 'Sign up', :new_hacker_registration
-    .clear
-    .anchor_image_holder
-      .container_12
-        header class="header"
-          section class="anchor_image"
-            img src="/images/anchor_image.png"
-          .clear
-        section class="blah"
-    .clear
-    .container_12
-      = yield
+    .wrapper
+      .nav_holder
+        .container_12
+          nav class="grid_12 site_nav"
+            ul class="site_nav_list"
+              erb:
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/hackers">Hackers</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+            ul class="site_nav_account"
+              li
+                = link_to 'Sign in', :new_hacker_session
+              li
+                = link_to 'Sign up', :new_hacker_registration
       .clear
-      footer class="footer"
-        | Special thanks to Twilio, Infochips, Houndstooth Coffee, Nola Stowe, and Cospace for sponsoring the event!
+      .anchor_image_holder
+        .container_12
+          header class="header"
+            section class="anchor_image"
+              img src="/images/anchor_image.png"
+            .clear
+          section class="blah"
+      .clear
+      .container_12
+        = yield
+    .clear
+    footer class="footer"
+      | Special thanks to Twilio, Infochips, Houndstooth Coffee, Nola Stowe, and Cospace for sponsoring the event!
 

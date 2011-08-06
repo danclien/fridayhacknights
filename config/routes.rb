@@ -14,6 +14,8 @@ Fridayhacknights::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => "home#index"
+
+  match 'gallery/:id' => 'gallery#show'
   
   match ':controller(/:action(/:id))'
 

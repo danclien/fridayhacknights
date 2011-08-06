@@ -1,21 +1,20 @@
 
 section class="grid_12 contents"
   h2 Welcome  
-  | Friday Night Hacks is an opportunity to connect, share ideas, build cool stuff and launch projects into the community. We typically do this into the wee hours of the morning while indulging in delicious snacks, brewskies and copious amounts of caffeine. Want to help someone build something awesome? Have an app you’ve been itching to work on? Want to just hang around, code and drink beer? Sign up to attend the next event! We’d like to encourage 
+  | Friday Night Hacks is an opportunity to connect, share ideas, build cool stuff and launch projects into the community. We typically do this into the wee hours of the morning while indulging in delicious snacks, brewskies and copious amounts of caffeine. Want to help someone build something awesome? Have an app you’ve been itching to work on? Want to just hang around, code and drink beer? Sign up to attend the next event!
 div class="clear"
 section class="grid_12 image_gallery"
   h2 
-    |Gallery
-  div class="image_gallery_row"
-    erb:
-      <a href="/"><img src="images/preview_image.png"></a>
-      <a href="/"><img src="images/preview_image.png"></a>
-      <a href="/"><img src="images/preview_image.png"></a>
-  div class="image_gallery_row"
-    erb:
-      <a href="/"><img src="images/preview_image.png"></a>
-      <a href="/"><img src="images/preview_image.png"></a>
-      <a href="/"><img src="images/preview_image.png"></a>
+    a href="/gallery"
+      | Gallery
+    - @photos.in_groups_of(3) do |photogroup|
+      .image_gallery_row
+        - photogroup.each do |photo|
+          - if !photo.nil?
+            a href="/gallery/#{@photos.index(photo)}"
+              img src="#{photo.thumbnail_3}"
+
+      
 section class="grid_12 image_gallery"
   h2 Past Events
   div class="image_gallery_row"

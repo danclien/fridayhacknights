@@ -1,4 +1,15 @@
-
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -38px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 38px; /* .push must be the same height as .footer */
+}
 
 /* @group General */
 
@@ -9,6 +20,10 @@ body {
 	font-family: Abel, Helvetica;
 	font-size: 20px;
 	margin: 0px;
+}
+
+h2 a {
+	text-decoration: none;
 }
 
 a {
@@ -97,6 +112,7 @@ a:hover {
 
 .contents {
 	line-height: 1.5em;
+	margin-top: 0.5em;
 }
 
 .image_gallery {
@@ -107,11 +123,14 @@ a:hover {
 }
 
 .image_gallery_row a {
-	margin: 0px 5px 0px 5px;	
+	margin: 0px 5px 0px 5px;
+
 }
 
 .image_gallery_row img {
 	border: 8px solid #ccc;
+	max-height: 284px;
+	max-width: 284px;
 }
 
 .image_gallery_row a:hover img {
@@ -128,20 +147,31 @@ a:hover {
 }
 
 
-
 /* @end */
 
 /* @group Footer */
 
 
 .footer {
-	border-top: 1px solid #ccc;
-	margin-top: 1em;
-	padding: 0.5em 0em 0.5em 0em;
+	background: #333;
+	color: #ccc;
+	margin-top: 3em;
+	padding: 0.5em 0em 0em 0em;
 	text-align: center;
 }
 
 /* @end */
+
+/* @group Gallery */
+
+.gallery_img {
+	border: 8px solid #ccc;
+	max-width: 940px;
+}
+
+/* @end */
+
+
 
 
 
