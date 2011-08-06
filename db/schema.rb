@@ -84,8 +84,10 @@ ActiveRecord::Schema.define(:version => 20110806060256) do
   add_index "hackers", ["reset_password_token"], :name => "index_hackers_on_reset_password_token", :unique => true
 
   create_table "projects", :force => true do |t|
+    t.integer  "owner_id"
     t.string   "title"
     t.string   "description"
+    t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
