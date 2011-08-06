@@ -9,6 +9,9 @@ gem 'typus', :git => 'git://github.com/typus/typus.git'
 gem 'carrierwave'
 gem 'slim'
 
+gem 'httparty'
+gem 'rafaels-picasa'
+
 gem 'sqlite3'
 
 # gem 'sqlite3-ruby', :require => 'sqlite3'

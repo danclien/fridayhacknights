@@ -1,0 +1,10 @@
+.grid_12
+  h1 Gallery
+  .image_gallery
+    - @photos.in_groups_of(3) do |photogroup|
+      .image_gallery_row
+        - photogroup.each do |photo|
+          - if !photo.nil?
+            a href="/gallery/#{@photos.index(photo)}"
+              img src="#{photo.thumbnail_3}"
+     
