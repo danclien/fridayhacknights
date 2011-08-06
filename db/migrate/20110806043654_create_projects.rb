@@ -3,7 +3,7 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       t.references :owner
 
-      t.string :title
+      t.string :name
       t.string :description
       t.string :website
 

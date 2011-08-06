@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(:version => 20110806060256) do
     t.string   "name"
     t.string   "skills"
     t.string   "website"
+    t.integer  "project_id"
     t.string   "email",                                 :default => "", :null => false
     t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
     t.string   "reset_password_token"
@@ -85,7 +86,7 @@ ActiveRecord::Schema.define(:version => 20110806060256) do
 
   create_table "projects", :force => true do |t|
     t.integer  "owner_id"
-    t.string   "title"
+    t.string   "name"
     t.string   "description"
     t.string   "website"
     t.datetime "created_at"
