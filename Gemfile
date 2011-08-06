@@ -2,7 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
 
-gem 'activeadmin'
+gem 'devise'
+
 gem 'carrierwave'
 gem 'slim'
 
