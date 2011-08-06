@@ -4,11 +4,21 @@
 
 body {
 	background-color: #203757;
+	border-top: 5px solid #587cb3;
 	color: #ddd;
 	font-family: Abel, Helvetica;
 	font-size: 20px;
 	margin: 0px;
 }
+
+a {
+	color: #ccc;
+}
+
+a:hover {
+	color: #fff;
+}
+
 
 /* @end */
 
@@ -28,7 +38,8 @@ body {
 
 
 .site_nav ul {
-	margin: 10px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+	-webkit-padding-start: 0px;	
 }
 
 .site_nav_list {
@@ -41,24 +52,43 @@ body {
 
 
 .site_nav ul a {
-	color: #ccc;
+	color: #333;
 	text-decoration: none;
 }
 
 .site_nav ul a:hover {
-	color: #fff;
+	color: #558;
 }
 
 
+.nav_holder {
+	background-color: #eee;
+     -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Saf3.0+, Chrome */
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Opera 10.5, IE9, FF4+, Chrome 10+ */	
+	
+}
 
 .site_nav li {
 	display: inline-block;
-	margin: 0em 0em 0em 2em;
 }
 
+.site_nav_list li {
+	margin: 0em 1.5em 0em 0em;	
+}
+
+.site_nav_account li {
+	margin: 0em 0em 0em 1.5em;
+}
+
+.anchor_image_holder {
+	background-color: #152439;
+	border-bottom: 1px solid #ccc;
+}
+
+
 .anchor_image img {
-	border: 8px solid #ccc;
-	border-width: 6px 0px 6px 0px;
+	margin: 0.5em 0em 0.5em 0em;
 }
 
 /* @end */
@@ -74,8 +104,6 @@ body {
 
 .image_gallery_row {
 	margin: 8px 0px 8px 0px;
-	
-	
 }
 
 .image_gallery_row a {
