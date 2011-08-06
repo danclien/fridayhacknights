@@ -51,7 +51,11 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     fastercsv (1.5.4)
+    has_scope (0.5.1)
     i18n (0.5.0)
+    inherited_resources (1.2.2)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6.0)
     mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -83,6 +87,7 @@ GEM
     rdoc (3.9.1)
     render_inheritable (1.0.0)
       rails (~> 3.0)
+    responders (0.6.4)
     slim (0.9.4)
       temple (~> 0.3.0)
       tilt (~> 1.2)
@@ -104,6 +109,7 @@ PLATFORMS
 DEPENDENCIES
   carrierwave
   devise
+  inherited_resources
   rails (= 3.0.9)
   slim
   sqlite3
