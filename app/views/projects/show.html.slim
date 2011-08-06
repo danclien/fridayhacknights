@@ -1,0 +1,15 @@
+p#notice = notice
+
+- if @hacker_is_owner
+  td = link_to 'Edit', edit_project_path(@project)
+  td = link_to 'Destroy', @project, :confirm => 'Are you sure?', :method => :delete
+p
+  b Title:
+  = @project.name
+p
+  b Description:
+  = @project.description
+
+= link_to 'Edit', edit_project_path(@project)
+|
+= link_to 'Back', projects_path
