@@ -26,17 +26,26 @@ body {
 	padding: 10px 0px 10px 0px;
 }
 
-.site_nav_list {
-	float: right;
+
+.site_nav ul {
 	margin: 10px 0px 5px 0px;
 }
 
-.site_nav_list a {
+.site_nav_list {
+	float: left;
+}
+
+.site_nav_account {
+	float: right;
+}
+
+
+.site_nav ul a {
 	color: #ccc;
 	text-decoration: none;
 }
 
-.site_nav_list a:hover {
+.site_nav ul a:hover {
 	color: #fff;
 }
 
@@ -47,8 +56,9 @@ body {
 	margin: 0em 0em 0em 2em;
 }
 
-.anchor_image {
-	
+.anchor_image img {
+	border: 8px solid #ccc;
+	border-width: 6px 0px 6px 0px;
 }
 
 /* @end */
