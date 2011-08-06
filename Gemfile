@@ -13,6 +13,12 @@ gem 'sass'
 gem 'httparty'
 gem 'rafaels-picasa', :require => "picasa"
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 
 # gem 'sqlite3-ruby', :require => 'sqlite3'
