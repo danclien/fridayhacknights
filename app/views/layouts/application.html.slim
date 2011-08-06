@@ -11,21 +11,7 @@ html
     = csrf_meta_tag
   body
     .wrapper
-      .nav_holder
-        .container_12
-          nav class="grid_12 site_nav"
-            ul class="site_nav_list"
-              erb:
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/hackers">Hackers</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-            ul class="site_nav_account"
-              li
-                = link_to 'Sign in', :new_hacker_session
-              li
-                = link_to 'Sign up', :new_hacker_registration
-      .clear
+      = render 'shared/nav-bar'
       .anchor_image_holder
         .container_12
           header class="header"

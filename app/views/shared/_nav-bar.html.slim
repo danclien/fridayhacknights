@@ -1,0 +1,16 @@
+.nav_bar
+  .container_12
+    nav.grid_12.site_nav
+      ul.site_nav_list
+        erb:
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/hackers">Hackers</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+      ul.site_nav_account
+        - if hacker_signed_in?
+          li= link_to 'Sign out', :destroy_hacker_session, :method => :delete
+        - else
+          li= link_to 'Sign in', :new_hacker_session
+          li= link_to 'Sign up', :new_hacker_registration
+.clear
