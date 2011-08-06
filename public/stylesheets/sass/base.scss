@@ -1,0 +1,240 @@
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -38px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 38px; /* .push must be the same height as .footer */
+}
+
+/* @group General */
+
+body {
+	background-color: #203757;
+	border-top: 5px solid #587cb3;
+	color: #ddd;
+	font-family: Abel, Helvetica;
+	font-size: 20px;
+	margin: 0px;
+}
+
+h2 {
+	color: #aaa;
+}
+
+h2 a {
+	text-decoration: none;
+}
+
+a {
+	color: #ccc;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+/* @end */
+
+/* @group Header */
+
+.header {
+}
+
+.logo {
+	float: left;
+	height: 40px;
+}
+
+.site_nav {
+	padding: 10px 0px 10px 0px;
+}
+
+
+.site_nav ul {
+	margin: 0px 0px 0px 0px;
+	-webkit-padding-start: 0px;	
+}
+
+.site_nav_list {
+	float: left;
+}
+
+.site_nav_account {
+	float: right;
+}
+
+
+.site_nav ul a {
+	color: #333;
+	text-decoration: none;
+}
+
+.site_nav ul a:hover {
+	color: #558;
+}
+
+
+.nav_bar {
+	background-color: #eee;
+     -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Saf3.0+, Chrome */
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Opera 10.5, IE9, FF4+, Chrome 10+ */	
+	
+}
+
+.site_nav li {
+	display: inline-block;
+}
+
+.site_nav_list li {
+	margin: 0em 1.5em 0em 0em;	
+}
+
+.site_nav_account li {
+	margin: 0em 0em 0em 1.5em;
+}
+
+.anchor_image_holder {
+	background-color: #152439;
+	border-bottom: 1px solid #666;
+}
+
+
+.anchor_image img {
+	margin: 0.5em 0em 0.5em 0em;
+}
+
+/* @end */
+
+/* @group Contents */
+
+.contents {
+	line-height: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.image_gallery {
+}
+
+.image_gallery_row {
+	margin: 8px 0px 8px 0px;
+}
+
+.image_gallery_row a {
+	margin: 0px 5px 0px 5px;
+
+}
+
+.image_gallery_row img {
+	border: 8px solid #ccc;
+	max-height: 284px;
+	max-width: 284px;
+}
+
+.image_gallery_row a:hover img {
+	border-color: #fff;
+}
+
+
+.image_gallery_row a:first-child {
+	margin-left: 0px;
+}
+
+.image_gallery_row a:last-child {
+	margin-right: 0px;
+}
+
+
+/* @end */
+
+/* @group Footer */
+
+
+.footer {
+	background: #333;
+	color: #ccc;
+	margin-top: 3em;
+	padding: 0.5em 0em 0em 0em;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group Gallery */
+
+.gallery_img {
+	border: 8px solid #ccc;
+	max-width: 940px;
+}
+
+/* @end */
+
+
+/* @group Form */
+
+.form_box {
+	margin: 1em auto 1em auto;
+	width: 300px;
+}
+
+.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit]{
+	width: 300px;
+}
+
+.remember_me_box label {
+	margin-left: 0.5em;
+	position: relative;
+	top: -5px;
+}
+
+
+
+
+/* @end */
+
+
+/* @group Projects */
+
+@mixin list-box {
+	background-color: #536886;
+     -moz-border-radius: 3px; /* FF1-3.6 */
+  -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+          border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+.project.list-item {
+	@include list-box;
+  margin: 1em 0em 1em 0em;
+	padding: 10px;
+
+	h2 { margin: 0px 0px 0.3em 0px; }
+}
+
+.project.show {
+
+	.website { font-size: 0.5em; padding-left: 0.5em; }
+
+	.hackers-involved {
+		padding: 0; 
+		list-style: none;
+	}
+	.hackers-involved li {
+		@include list-box;
+		float: left;
+		margin: 3px 5px;
+		padding: 0.2em 0.5em;
+		list-style: none;
+	}
+}
+
+/* @end */
+
+
+
