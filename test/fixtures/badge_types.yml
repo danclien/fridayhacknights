@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  pretty_name: MyString
+  rank: 1
+
+two:
+  name: MyString
+  pretty_name: MyString
+  rank: 1

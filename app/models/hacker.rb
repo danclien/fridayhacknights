@@ -5,6 +5,9 @@ class Hacker < ActiveRecord::Base
   has_many :events, :through => :checkins
   has_many :projects, :through => :checkins
 
+  has_many :badges
+  has_many :badge_types, :through => :badges
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
