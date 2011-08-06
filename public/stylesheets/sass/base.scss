@@ -5,10 +5,10 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -38px; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto -58px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-	height: 38px; /* .push must be the same height as .footer */
+	height: 58px; /* .push must be the same height as .footer */
 }
 
 /* @group General */
@@ -151,6 +151,18 @@ a:hover {
 	margin-right: 0px;
 }
 
+ul.created_by {
+	
+	
+}
+
+ul.created_by li {
+	float: left;
+	list-style: none;
+	margin: 3px 5px;
+	padding: 0.2em 0.5em;
+}
+
 
 /* @end */
 
@@ -163,6 +175,11 @@ a:hover {
 	margin-top: 3em;
 	padding: 0.5em 0em 0em 0em;
 	text-align: center;
+}
+
+.created_by {
+  font-size: 14px;
+  margin-top: 0.5em;
 }
 
 /* @end */

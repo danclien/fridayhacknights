@@ -5,11 +5,11 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -38px;
+  margin: 0 auto -58px;
   /* the bottom margin is the negative value of the footer's height */ }
 
 .footer, .push {
-  height: 38px;
+  height: 58px;
   /* .push must be the same height as .footer */ }
 
 /* @group General */
@@ -111,6 +111,12 @@ a:hover {
 .image_gallery_row a:last-child {
   margin-right: 0px; }
 
+ul.created_by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em; }
+
 /* @end */
 /* @group Footer */
 .footer {
@@ -119,6 +125,10 @@ a:hover {
   margin-top: 3em;
   padding: 0.5em 0em 0em 0em;
   text-align: center; }
+
+.created_by {
+  font-size: 14px;
+  margin-top: 0.5em; }
 
 /* @end */
 /* @group Gallery */
@@ -132,21 +142,8 @@ a:hover {
   margin: 1em auto 1em auto;
   width: 300px; }
 
-.form_box_wide {
-	width: 600px;
-}
-
-.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit]{
-	width: 300px;
-}
-
-.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit]{
-	width: 600px;
-}
-
-#project_description {
-	height: 150px;
-}
+.form_box input[type=text], .form_box input[type=email], .form_box input[type=password], .form_box input[type=submit] {
+  width: 300px; }
 
 .remember_me_box label {
   margin-left: 0.5em;
@@ -154,7 +151,6 @@ a:hover {
   top: -5px; }
 
 /* @end */
-
 /* @group Projects */
 .project.list-item {
   background-color: #536886;
@@ -172,11 +168,9 @@ a:hover {
 .project.show .website {
   font-size: 0.5em;
   padding-left: 0.5em; }
-  
 .project.show .hackers-involved {
   padding: 0;
   list-style: none; }
-  
 .project.show .hackers-involved li {
   background-color: #536886;
   -moz-border-radius: 3px;
