@@ -1,13 +1,17 @@
 Fridayhacknights::Application.routes.draw do
-  resources :projects
+  devise_for :hackers
 
-  resources :hackers
+  get "home/index"
+
+  resources :projects
 
   resources :events
 
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
+
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

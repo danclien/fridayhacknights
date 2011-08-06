@@ -1,0 +1,10 @@
+h1 Friday Hack Nights
+
+- if hacker_signed_in?
+  p = "Welcome #{current_hacker.name}. We've been expecting you."
+- else
+  p Welcome to the website.
+
+= link_to 'Sign in', :new_hacker_session
+br
+= link_to 'Sign up', :new_hacker_registration
