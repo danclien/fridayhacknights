@@ -1,0 +1,44 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Checkin:
+  fields:
+    default: event_id, hacker_id, project_id, description, event, hacker, project
+    form: event, hacker, project, description, event, hacker, project
+  order_by: 
+  relationships: event, hacker, project
+  filters: created_at
+  search: 
+  application: fridayhacknights
+
+Event:
+  fields:
+    default: start_date, end_date, gallery_url
+    form: start_date, end_date, gallery_url
+  order_by: 
+  relationships: hackers, projects
+  filters: created_at
+  search: 
+  application: fridayhacknights
+
+Hacker:
+  fields:
+    default: name, skills, website, project_id, email, sign_in_count, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip
+    form: name, skills, website, email
+  order_by: 
+  relationships:
+  filters: created_at
+  search: name
+  application: fridayhacknights
+
+Project:
+  fields:
+    default: owner_id, name, description, website
+    form: owner, name, description, website
+  order_by: 
+  relationships: owner
+  filters: created_at
+  search: name
+  application: fridayhacknights
+
