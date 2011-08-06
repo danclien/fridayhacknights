@@ -3,4 +3,6 @@ class Project < ActiveRecord::Base
   
   has_many :events, :through => :checkins
   has_many :hackers, :through => :checkins
+
+  validates :owner, :presence => true
 end
