@@ -10,7 +10,7 @@ gem 'carrierwave'
 gem 'slim'
 
 gem 'httparty'
-gem 'rafaels-picasa'
+gem 'rafaels-picasa', :require => "picasa"
 
 gem 'sqlite3'
 
