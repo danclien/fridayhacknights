@@ -6,6 +6,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/projects">Projects</a></li>
           <li><a href="/gallery">Gallery</a></li>
+          <li><a href="https://github.com/danclien/fridayhacknights">Github</a></li>
       ul.site_nav_account
         - if hacker_signed_in?
           li= link_to 'Sign out', :destroy_hacker_session, :method => :delete
