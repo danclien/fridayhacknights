@@ -1,6 +1,7 @@
 /* Constants */
 $blue: #587CB3;
 $orange: #ffa210;
+$darkorange: darken($orange, 10%);
 $text: #333;
 $bgcolor: lighten(#fff2da, 2%);
 $headercolor: darken($blue, 15%);
@@ -49,7 +50,7 @@ a {
 }
 
 a:hover {
-	color: darken($text, 20%);
+	color: $darkorange;
 }
 
 @mixin li-box {
@@ -107,12 +108,12 @@ a:hover {
 
 
 .site-nav ul a {
-	color: #333;
+	color: $text;
 	text-decoration: none;
 }
 
 .site-nav ul a:hover {
-	color: #558;
+	color: $darkorange;
 }
 
 

@@ -1,10 +1,10 @@
 /* Constants */
-/* line 10, sass/base.scss */
+/* line 14, sass/base.scss */
 html, body {
   height: 100%;
 }
 
-/* line 14, sass/base.scss */
+/* line 18, sass/base.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -13,55 +13,55 @@ html, body {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 21, sass/base.scss */
+/* line 25, sass/base.scss */
 .footer, .push {
   height: 58px;
   /* .push must be the same height as .footer */
 }
 
 /* @group General */
-/* line 27, sass/base.scss */
+/* line 31, sass/base.scss */
 body {
-  background-color: #fff2da;
-  border-top: 5px solid #587cb3;
-  color: #444444;
+  background-color: #fff6e4;
+  border-top: 5px solid #ffa210;
+  color: #333333;
   font-family: Abel, Helvetica;
   font-size: 20px;
   margin: 0px;
 }
 
-/* line 36, sass/base.scss */
-h2 {
-  color: #444444;
+/* line 40, sass/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
 }
 
-/* line 40, sass/base.scss */
+/* line 44, sass/base.scss */
 h2 a {
   text-decoration: none;
 }
 
-/* line 44, sass/base.scss */
-a {
-  color: #444444;
-}
-
 /* line 48, sass/base.scss */
-a:hover {
-  color: #111111;
+a {
+  color: #333333;
 }
 
-/* line 59, sass/base.scss */
+/* line 52, sass/base.scss */
+a:hover {
+  color: #dc8600;
+}
+
+/* line 63, sass/base.scss */
 .item-list {
   padding: 0;
   list-style: none;
 }
-/* line 62, sass/base.scss */
+/* line 66, sass/base.scss */
 .item-list a {
   text-decoration: none;
 }
-/* line 65, sass/base.scss */
+/* line 69, sass/base.scss */
 .item-list li {
-  background-color: #e9dabd;
+  background-color: #ecdec5;
   -moz-border-radius: 3px;
   /* FF1-3.6 */
   -webkit-border-radius: 3px;
@@ -76,47 +76,47 @@ a:hover {
 
 /* @end */
 /* @group Header */
-/* line 82, sass/base.scss */
+/* line 86, sass/base.scss */
 .logo {
   float: left;
   height: 40px;
 }
 
-/* line 87, sass/base.scss */
+/* line 91, sass/base.scss */
 .site-nav {
   padding: 10px 0px 10px 0px;
 }
 
-/* line 92, sass/base.scss */
+/* line 96, sass/base.scss */
 .site-nav ul {
   margin: 0px 0px 0px 0px;
   -webkit-padding-start: 0px;
 }
 
-/* line 97, sass/base.scss */
+/* line 101, sass/base.scss */
 .site-nav-list {
   float: left;
 }
 
-/* line 101, sass/base.scss */
+/* line 105, sass/base.scss */
 .site-nav-account {
   float: right;
 }
 
-/* line 106, sass/base.scss */
+/* line 110, sass/base.scss */
 .site-nav ul a {
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 
-/* line 111, sass/base.scss */
+/* line 115, sass/base.scss */
 .site-nav ul a:hover {
-  color: #558;
+  color: #dc8600;
 }
 
-/* line 116, sass/base.scss */
+/* line 120, sass/base.scss */
 .nav-bar {
-  background-color: #eee;
+  background-color: #fff;
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   /* FF3.5 - 3.6 */
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -126,34 +126,34 @@ a:hover {
   z-index: 1;
 }
 
-/* line 125, sass/base.scss */
+/* line 129, sass/base.scss */
 .site-nav li {
   display: inline-block;
 }
 
-/* line 129, sass/base.scss */
+/* line 133, sass/base.scss */
 .site-nav-list li {
   margin: 0em 1.5em 0em 0em;
 }
 
-/* line 133, sass/base.scss */
+/* line 137, sass/base.scss */
 .site-nav-account li {
   margin: 0em 0em 0em 1.5em;
 }
 
-/* line 137, sass/base.scss */
+/* line 141, sass/base.scss */
 .banner-image-holder {
-  background-color: #24354e;
+  background-image: url("/images/banner_bg.png");
 }
 
-/* line 141, sass/base.scss */
+/* line 145, sass/base.scss */
 .banner-image img {
   margin: 0.5em 0em 0em 0em;
 }
 
 /* @end */
 /* @group Contents */
-/* line 149, sass/base.scss */
+/* line 153, sass/base.scss */
 .contents {
   -moz-box-shadow: 0px 0px 8px #000;
   /* FF3.5 - 3.6 */
@@ -166,39 +166,39 @@ a:hover {
   padding-bottom: 1em;
 }
 
-/* line 160, sass/base.scss */
+/* line 164, sass/base.scss */
 .image-gallery-row {
   margin: 8px 0px 8px 0px;
 }
 
-/* line 164, sass/base.scss */
+/* line 168, sass/base.scss */
 .image-gallery-row a {
   margin: 0px 5px 0px 5px;
 }
 
-/* line 169, sass/base.scss */
+/* line 173, sass/base.scss */
 .image-gallery-row img {
-  border: 8px solid #dcc497;
+  border: 8px solid #dfc89e;
   max-height: 284px;
   max-width: 284px;
 }
 
-/* line 175, sass/base.scss */
+/* line 179, sass/base.scss */
 .image-gallery-row a:hover img {
-  border-color: #d0ae71;
+  border-color: #d2b278;
 }
 
-/* line 180, sass/base.scss */
+/* line 184, sass/base.scss */
 .image-gallery-row a:first-child {
   margin-left: 0px;
 }
 
-/* line 184, sass/base.scss */
+/* line 188, sass/base.scss */
 .image-gallery-row a:last-child {
   margin-right: 0px;
 }
 
-/* line 193, sass/base.scss */
+/* line 197, sass/base.scss */
 ul.created-by li {
   float: left;
   list-style: none;
@@ -208,7 +208,7 @@ ul.created-by li {
 
 /* @end */
 /* @group Footer */
-/* line 206, sass/base.scss */
+/* line 210, sass/base.scss */
 .footer {
   background: #333;
   color: #ccc;
@@ -216,7 +216,7 @@ ul.created-by li {
   text-align: center;
 }
 
-/* line 213, sass/base.scss */
+/* line 217, sass/base.scss */
 .created-by {
   font-size: 14px;
   margin-top: 0.5em;
@@ -224,34 +224,34 @@ ul.created-by li {
 
 /* @end */
 /* @group Gallery */
-/* line 222, sass/base.scss */
+/* line 226, sass/base.scss */
 .gallery-img {
-  border: 8px solid #dcc497;
+  border: 8px solid #dfc89e;
   max-width: 940px;
 }
 
 /* @end */
 /* @group Form */
-/* line 232, sass/base.scss */
+/* line 236, sass/base.scss */
 .form-box {
   margin: 1em auto 1em auto;
   width: 300px;
 }
-/* line 235, sass/base.scss */
+/* line 239, sass/base.scss */
 .form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
   width: 300px;
 }
 
-/* line 241, sass/base.scss */
+/* line 245, sass/base.scss */
 .form-box-wide {
   width: 600px;
 }
-/* line 243, sass/base.scss */
+/* line 247, sass/base.scss */
 .form-box-wide input[type=text], .form-box-wide input[type=email], .form-box-wide input[type=password], .form-box-wide input[type=submit] {
   width: 600px;
 }
 
-/* line 248, sass/base.scss */
+/* line 252, sass/base.scss */
 .remember-me-box label {
   margin-left: 0.5em;
   position: relative;
@@ -260,9 +260,9 @@ ul.created-by li {
 
 /* @end */
 /* @group Projects */
-/* line 259, sass/base.scss */
+/* line 263, sass/base.scss */
 .project.list-item {
-  background-color: #e9dabd;
+  background-color: #ecdec5;
   -moz-border-radius: 3px;
   /* FF1-3.6 */
   -webkit-border-radius: 3px;
@@ -272,24 +272,24 @@ ul.created-by li {
   margin: 1em 0em 1em 0em;
   padding: 10px;
 }
-/* line 264, sass/base.scss */
+/* line 268, sass/base.scss */
 .project.list-item h2 {
   margin: 0px 0px 0.3em 0px;
 }
 
-/* line 269, sass/base.scss */
+/* line 273, sass/base.scss */
 .project.show .website {
   font-size: 0.5em;
   padding-left: 0.5em;
 }
 
-/* line 273, sass/base.scss */
+/* line 277, sass/base.scss */
 .project-hackers {
   margin: 0.5em 0em 0em 0em;
   font-size: 0.9em;
 }
 
-/* line 278, sass/base.scss */
+/* line 282, sass/base.scss */
 .project-hackers .hacker {
   font-size: 0.9em;
   margin: 3px 5px;
