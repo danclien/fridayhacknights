@@ -24,7 +24,7 @@
     h3 Hackers Involved:
 
     ul.hackers-involved
-      - @hackers_involved.each do |hacker|
+      - @project.hackers_involved.each do |hacker|
         a href=hacker_path(hacker)
           li
             .name = hacker.name

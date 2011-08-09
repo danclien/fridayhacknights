@@ -4,8 +4,6 @@ class ProjectsController < InheritedResources::Base
   def show
     show! do
       @hacker_is_owner = current_hacker == @project.owner
-      # TODO: remove duplicates
-      @hackers_involved = resource.hackers
     end
   end
 

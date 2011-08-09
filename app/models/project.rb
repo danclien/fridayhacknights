@@ -6,4 +6,8 @@ class Project < ActiveRecord::Base
   has_many :hackers, :through => :checkins
 
   validates :owner_id, :presence => true
+
+  def hackers_involved
+    self.hackers.group(:id)
+  end
 end

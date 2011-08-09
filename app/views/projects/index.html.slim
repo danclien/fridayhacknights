@@ -10,5 +10,5 @@
       .desc #{project.description}
       div.project-hackers
         | Hackers: 
-        = project.hackers.map {|h| h.name}.join ', '
+        = project.hackers_involved.map {|h| h.name}.join ', '
 
