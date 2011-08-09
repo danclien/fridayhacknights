@@ -1,4 +1,4 @@
-.grid_12
+.project.index.grid_12
   .title
     h1 Projects
 
@@ -8,7 +8,7 @@
   - @projects.each do |project|
     .project.light-box
       h2 = link_to project.name, project_path(project)
-      .desc #{project.description}
+      .description #{project.description}
       .project-hackers
         = hacker_list project.hackers_involved
         .clear
