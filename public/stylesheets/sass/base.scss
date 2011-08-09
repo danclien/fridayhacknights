@@ -1,7 +1,10 @@
 /* Constants */
 $blue: #587CB3;
-$text: #444;
-$bgcolor: #fff2da;
+$orange: #ffa210;
+$text: #333;
+$bgcolor: lighten(#fff2da, 2%);
+$headercolor: darken($blue, 15%);
+$headercolor: #333;
 
 $imgborder: desaturate(darken($bgcolor, 20%), 50%);
 $imgborderhover: darken($imgborder, 10%);
@@ -26,15 +29,15 @@ html, body {
 
 body {
 	background-color: $bgcolor;
-	border-top: 5px solid $blue;
+	border-top: 5px solid $orange;
 	color: $text;
 	font-family: Abel, Helvetica;
 	font-size: 20px;
 	margin: 0px;
 }
 
-h2 {
-	color: $text;
+h1, h2, h3, h4, h5, h6 {
+	color: $headercolor;
 }
 
 h2 a {
@@ -92,7 +95,7 @@ a:hover {
 
 
 .nav-bar {
-	background-color: #eee;
+	background-color: #fff;
      -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* FF3.5 - 3.6 */
   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Saf3.0+, Chrome */
           box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Opera 10.5, IE9, FF4+, Chrome 10+ */	
@@ -113,7 +116,7 @@ a:hover {
 }
 
 .banner-image-holder {
-	background-color: darken($blue, 30%);
+	background-image: url('/images/banner_bg.png');
 }
 
 .banner-image img {
