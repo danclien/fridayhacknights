@@ -1,7 +1,7 @@
 /* Constants */
 $blue: #587CB3;
-$orange: #ffa210;
-$darkorange: darken($orange, 15%);
+$orange: #ff7939;
+$darkorange: $orange;
 $text: #333;
 $bgcolor: lighten(#fff2da, 2%);
 $red: desaturate(#800, 10%);
@@ -235,7 +235,7 @@ ul.created-by li {
 	background: $header-color;
 	color: #FFF6E4;
 	border-top: 2px solid $darkorange;
-	padding: 0.5em 0em 0.5em 0em;
+	padding: 0.75em 0em 0.5em 0em;
 	text-align: center;
 }
 
