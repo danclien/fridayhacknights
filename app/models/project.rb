@@ -8,6 +8,6 @@ class Project < ActiveRecord::Base
   validates :owner_id, :presence => true
 
   def hackers_involved
-    self.hackers.group(:id)
+    self.hackers.group('hackers.id')
   end
 end
