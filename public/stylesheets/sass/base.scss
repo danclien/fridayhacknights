@@ -301,6 +301,27 @@ ul.created-by li {
 
 .project.index {
 
+  a { text-decoration: none; }
+  .view {
+    @include rounded;
+    @include dark-box;
+    border: 1px solid $header-color;
+    margin: 0 10px 0 0;
+    padding: 4px 8px;
+    .icon {
+      float: left;
+      margin: 6px 3px 0 0;
+    }
+  }
+
+  .divider {
+    float: left;
+    height: 43px;
+    border-left: 1px solid lighten($header-color, 55%);
+    margin: -3px 12px 0 3px;
+    padding-top: 4px;
+  }
+
   .description {
     font-size: 0.9em;
   }
@@ -335,6 +356,7 @@ ul.created-by li {
 .icon.person { background-image: url(/images/icons/person.png); }
 .icon.folder { background-image: url(/images/icons/folder.png); }
 .icon.file   { background-image: url(/images/icons/file.png); }
+.icon.zoom   { background-image: url(/images/icons/zoom.png); }
 
 .lfloat { float: left; }
 .rfloat { float: right; }
