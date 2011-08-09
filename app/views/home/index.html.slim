@@ -1,7 +1,43 @@
 
-section class="grid_12"
+section class="grid_8"
   h2 Welcome  
   | Friday Night Hacks is an opportunity to connect, share ideas, build cool stuff and launch projects into the community. We typically do this into the wee hours of the morning while indulging in delicious snacks, brewskies and copious amounts of caffeine. Want to help someone build something awesome? Have an app you’ve been itching to work on? Want to just hang around, code and drink beer? Sign up to attend the next event!
+aside.grid_4
+  erb:
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'search',
+      search: '#fridaynighthacks',
+      interval: 6000,
+      title: '',
+      subject: 'Friday Hack Nights',
+      width: 300,
+      height: 300,
+      theme: {
+        shell: {
+          background: '#dcc497',
+          color: '#ffffff'
+        },
+        tweets: {
+          background: '#fff2da',
+          color: '#444444',
+          links: '#486692'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        toptweets: true,
+        behavior: 'default'
+      }
+    }).render().start();
+    </script>  
 div class="clear"
 section class="grid_12 image-gallery"
   h2 
@@ -13,6 +49,4 @@ section class="grid_12 image-gallery"
           - if !photo.nil?
             a href="/gallery/#{@photos.index(photo)}"
               img src="#{photo.thumbnail_3}"
-
-      
-    
+div class="clear"
