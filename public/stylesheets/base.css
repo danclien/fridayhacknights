@@ -23,7 +23,7 @@ html, body {
 /* line 27, sass/base.scss */
 body {
   background-color: #fff2da;
-  border-top: 5px solid #587cb3;
+  border-top: 5px solid #ffa210;
   color: #444444;
   font-family: Abel, Helvetica;
   font-size: 20px;
@@ -143,7 +143,7 @@ a:hover {
 
 /* line 137, sass/base.scss */
 .banner-image-holder {
-  background-color: #24354e;
+  background-image: url('/images/banner_bg.png');
 }
 
 /* line 141, sass/base.scss */
