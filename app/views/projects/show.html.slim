@@ -22,7 +22,7 @@
         = @project.description
     
     .light-box.bp.grid_3
-      - if @project.website
+      - if @project.website.present?
         .website
           h3 Website:
           a href=@project.website = @project.website
