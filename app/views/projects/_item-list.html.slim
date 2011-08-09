@@ -1,0 +1,8 @@
+ul.item-list
+  - projects.each do |project|
+    li
+      a href=project_path(project)
+        .content
+          .icon.folder.lfloat
+          | &bull;&nbsp;
+          = project.name

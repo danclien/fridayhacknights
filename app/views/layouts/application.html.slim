@@ -4,7 +4,6 @@ html
     title Friday Night Hacks
     = stylesheet_link_tag :all
     link ref="shortcut icon" href="/favicon.ico"
-    link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'
     
     = javascript_include_tag :defaults
     = javascript_include_tag "jquery.formalize"
@@ -24,5 +23,6 @@ html
         .container_12
           = yield
       .push
+      .clear
     = render 'shared/footer'
 

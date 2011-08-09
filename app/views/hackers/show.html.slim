@@ -1,13 +1,19 @@
 .grid_12
-  h2 = @hacker.name
 
-  h3 Projects Involved:
-  ul.projects-involved.item-list
-    - @hacker.projects_involved.each do |project|
-      a href=project_path(project)
-        li = project.name
-  .clear
+  .hacker.show
 
-  h3 Badges  
-  - @hacker.badge_types.each do |badge|
-    p = badge.name
+    / .dot.lfloat &bull;
+    h1
+      = @hacker.name
+      img.icon src="/images/icons/person.png"
+
+    .light-box.bp
+      - if @hacker.projects_involved.length > 0
+        h3 Projects Involved:
+        = project_list @hacker.projects_involved
+        .clear
+
+      - if @hacker.badge_types.length > 0
+        h3 Badges
+        - @hacker.badge_types.each do |badge|
+          p = badge.name
