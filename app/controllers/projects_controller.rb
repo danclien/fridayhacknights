@@ -24,12 +24,17 @@ class ProjectsController < InheritedResources::Base
 
     # TODO: check for existing checkin
 
-    success = Checkin.create! \
+    checkin = Checkin.create \
       :hacker => current_hacker,
       :project_id => params[:id],
       # TODO: make sure this is the actual current event
       :event => Event.last
 
-    redirect_to project_path(project), :notice => 'Checked in successfully.'
+    if checkin.errors.length > 0
+      puts "Checkin create errors: #{checkin.errors.inspect}"
+      redirect_to project_path(project), :notice => "You've already checked into this project."
+    else
+      redirect_to project_path(project), :notice => "Checked in successfully."
+    end
   end
 end
