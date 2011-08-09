@@ -1,8 +1,8 @@
 .grid_12
   h1 Gallery
-  .image_gallery
+  .image-gallery
     - @photos.in_groups_of(3) do |photogroup|
-      .image_gallery_row
+      .image-gallery-row
         - photogroup.each do |photo|
           - if !photo.nil?
             a href="/gallery/#{@photos.index(photo)}"

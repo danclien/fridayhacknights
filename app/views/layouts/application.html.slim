@@ -3,9 +3,8 @@ html
   head
     title Friday Night Hacks
     = stylesheet_link_tag :all
-    erb:
-      <link ref="shortcut icon" href="/favicon.ico">
-      <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>  
+    link ref="shortcut icon" href="/favicon.ico"
+    link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'
     
     = javascript_include_tag :defaults
     = javascript_include_tag "jquery.formalize"
@@ -13,10 +12,10 @@ html
   body
     .wrapper
       = render 'shared/nav-bar'
-      .anchor_image_holder
+      .anchor-image-holder
         .container_12
           header class="header"
-            section class="anchor_image"
+            section class="anchor-image"
               img src="/images/anchor_image.png"
             .clear
           section class="blah"
