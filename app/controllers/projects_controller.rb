@@ -4,8 +4,6 @@ class ProjectsController < InheritedResources::Base
   def show
     show! do
       @hacker_is_owner = current_hacker == @project.owner
-      # TODO: remove duplicates
-      @hackers_involved = resource.hackers
     end
   end
 
@@ -22,14 +20,16 @@ class ProjectsController < InheritedResources::Base
       return show! :alert => 'Invalid project'
     end
 
-    # TODO: check for existing checkin
-
-    success = Checkin.create! \
+    checkin = Checkin.create \
       :hacker => current_hacker,
       :project_id => params[:id],
-      # TODO: make sure this is the actual current event
-      :event => Event.last
+      :event => Event.current
 
-    redirect_to project_path(project), :notice => 'Checked in successfully.'
+    if checkin.errors.length > 0
+      puts "Checkin create errors: #{checkin.errors.inspect}"
+      return show! :notice => "You've already checked into this project."
+    else
+      return show! :notice => "Checked in successfully."
+    end
   end
 end

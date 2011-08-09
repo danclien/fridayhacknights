@@ -1,10 +1,10 @@
 /* Constants */
-/* line 13, sass/base.scss */
+/* line 10, sass/base.scss */
 html, body {
   height: 100%;
 }
 
-/* line 17, sass/base.scss */
+/* line 14, sass/base.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -13,86 +13,110 @@ html, body {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 24, sass/base.scss */
+/* line 21, sass/base.scss */
 .footer, .push {
   height: 58px;
   /* .push must be the same height as .footer */
 }
 
 /* @group General */
-/* line 30, sass/base.scss */
+/* line 27, sass/base.scss */
 body {
-  background-color: #fff6e4;
-  border-top: 5px solid #ffa210;
-  color: #333333;
+  background-color: #fff2da;
+  border-top: 5px solid #587cb3;
+  color: #444444;
   font-family: Abel, Helvetica;
   font-size: 20px;
   margin: 0px;
 }
 
-/* line 39, sass/base.scss */
-h1, h2, h3, h4, h5, h6 {
-  color: #333333;
+/* line 36, sass/base.scss */
+h2 {
+  color: #444444;
 }
 
-/* line 43, sass/base.scss */
+/* line 40, sass/base.scss */
 h2 a {
   text-decoration: none;
 }
 
-/* line 47, sass/base.scss */
+/* line 44, sass/base.scss */
 a {
-  color: #333333;
+  color: #444444;
 }
 
-/* line 51, sass/base.scss */
+/* line 48, sass/base.scss */
 a:hover {
-  color: black;
+  color: #111111;
+}
+
+/* line 59, sass/base.scss */
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+/* line 62, sass/base.scss */
+.item-list a {
+  text-decoration: none;
+}
+/* line 65, sass/base.scss */
+.item-list li {
+  background-color: #e9dabd;
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  float: left;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+  list-style: none;
 }
 
 /* @end */
 /* @group Header */
-/* line 63, sass/base.scss */
+/* line 82, sass/base.scss */
 .logo {
   float: left;
   height: 40px;
 }
 
-/* line 68, sass/base.scss */
+/* line 87, sass/base.scss */
 .site-nav {
   padding: 10px 0px 10px 0px;
 }
 
-/* line 73, sass/base.scss */
+/* line 92, sass/base.scss */
 .site-nav ul {
   margin: 0px 0px 0px 0px;
   -webkit-padding-start: 0px;
 }
 
-/* line 78, sass/base.scss */
+/* line 97, sass/base.scss */
 .site-nav-list {
   float: left;
 }
 
-/* line 82, sass/base.scss */
+/* line 101, sass/base.scss */
 .site-nav-account {
   float: right;
 }
 
-/* line 87, sass/base.scss */
+/* line 106, sass/base.scss */
 .site-nav ul a {
   color: #333;
   text-decoration: none;
 }
 
-/* line 92, sass/base.scss */
+/* line 111, sass/base.scss */
 .site-nav ul a:hover {
   color: #558;
 }
 
-/* line 97, sass/base.scss */
+/* line 116, sass/base.scss */
 .nav-bar {
-  background-color: #fff;
+  background-color: #eee;
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   /* FF3.5 - 3.6 */
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -102,34 +126,34 @@ a:hover {
   z-index: 1;
 }
 
-/* line 106, sass/base.scss */
+/* line 125, sass/base.scss */
 .site-nav li {
   display: inline-block;
 }
 
-/* line 110, sass/base.scss */
+/* line 129, sass/base.scss */
 .site-nav-list li {
   margin: 0em 1.5em 0em 0em;
 }
 
-/* line 114, sass/base.scss */
+/* line 133, sass/base.scss */
 .site-nav-account li {
   margin: 0em 0em 0em 1.5em;
 }
 
-/* line 118, sass/base.scss */
+/* line 137, sass/base.scss */
 .banner-image-holder {
-  background-image: url("/images/banner_bg.png");
+  background-color: #24354e;
 }
 
-/* line 122, sass/base.scss */
+/* line 141, sass/base.scss */
 .banner-image img {
   margin: 0.5em 0em 0em 0em;
 }
 
 /* @end */
 /* @group Contents */
-/* line 130, sass/base.scss */
+/* line 149, sass/base.scss */
 .contents {
   -moz-box-shadow: 0px 0px 8px #000;
   /* FF3.5 - 3.6 */
@@ -142,39 +166,39 @@ a:hover {
   padding-bottom: 1em;
 }
 
-/* line 141, sass/base.scss */
+/* line 160, sass/base.scss */
 .image-gallery-row {
   margin: 8px 0px 8px 0px;
 }
 
-/* line 145, sass/base.scss */
+/* line 164, sass/base.scss */
 .image-gallery-row a {
   margin: 0px 5px 0px 5px;
 }
 
-/* line 150, sass/base.scss */
+/* line 169, sass/base.scss */
 .image-gallery-row img {
-  border: 8px solid #dfc89e;
+  border: 8px solid #dcc497;
   max-height: 284px;
   max-width: 284px;
 }
 
-/* line 156, sass/base.scss */
+/* line 175, sass/base.scss */
 .image-gallery-row a:hover img {
-  border-color: #d2b278;
+  border-color: #d0ae71;
 }
 
-/* line 161, sass/base.scss */
+/* line 180, sass/base.scss */
 .image-gallery-row a:first-child {
   margin-left: 0px;
 }
 
-/* line 165, sass/base.scss */
+/* line 184, sass/base.scss */
 .image-gallery-row a:last-child {
   margin-right: 0px;
 }
 
-/* line 174, sass/base.scss */
+/* line 193, sass/base.scss */
 ul.created-by li {
   float: left;
   list-style: none;
@@ -184,7 +208,7 @@ ul.created-by li {
 
 /* @end */
 /* @group Footer */
-/* line 187, sass/base.scss */
+/* line 206, sass/base.scss */
 .footer {
   background: #333;
   color: #ccc;
@@ -192,7 +216,7 @@ ul.created-by li {
   text-align: center;
 }
 
-/* line 194, sass/base.scss */
+/* line 213, sass/base.scss */
 .created-by {
   font-size: 14px;
   margin-top: 0.5em;
@@ -200,34 +224,34 @@ ul.created-by li {
 
 /* @end */
 /* @group Gallery */
-/* line 203, sass/base.scss */
+/* line 222, sass/base.scss */
 .gallery-img {
-  border: 8px solid #dfc89e;
+  border: 8px solid #dcc497;
   max-width: 940px;
 }
 
 /* @end */
 /* @group Form */
-/* line 213, sass/base.scss */
+/* line 232, sass/base.scss */
 .form-box {
   margin: 1em auto 1em auto;
   width: 300px;
 }
-/* line 216, sass/base.scss */
+/* line 235, sass/base.scss */
 .form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
   width: 300px;
 }
 
-/* line 222, sass/base.scss */
+/* line 241, sass/base.scss */
 .form-box-wide {
   width: 600px;
 }
-/* line 224, sass/base.scss */
+/* line 243, sass/base.scss */
 .form-box-wide input[type=text], .form-box-wide input[type=email], .form-box-wide input[type=password], .form-box-wide input[type=submit] {
   width: 600px;
 }
 
-/* line 229, sass/base.scss */
+/* line 248, sass/base.scss */
 .remember-me-box label {
   margin-left: 0.5em;
   position: relative;
@@ -236,9 +260,9 @@ ul.created-by li {
 
 /* @end */
 /* @group Projects */
-/* line 247, sass/base.scss */
+/* line 259, sass/base.scss */
 .project.list-item {
-  background-color: #ecdec5;
+  background-color: #e9dabd;
   -moz-border-radius: 3px;
   /* FF1-3.6 */
   -webkit-border-radius: 3px;
@@ -248,50 +272,29 @@ ul.created-by li {
   margin: 1em 0em 1em 0em;
   padding: 10px;
 }
-/* line 252, sass/base.scss */
+/* line 264, sass/base.scss */
 .project.list-item h2 {
   margin: 0px 0px 0.3em 0px;
 }
 
-/* line 257, sass/base.scss */
+/* line 269, sass/base.scss */
 .project.show .website {
   font-size: 0.5em;
   padding-left: 0.5em;
 }
-/* line 259, sass/base.scss */
-.project.show .hackers-involved {
-  padding: 0;
-  list-style: none;
-}
-/* line 262, sass/base.scss */
-.project.show .hackers-involved a {
-  text-decoration: none;
-}
-/* line 266, sass/base.scss */
-.project.show .hackers-involved li {
-  background-color: #ecdec5;
-  -moz-border-radius: 3px;
-  /* FF1-3.6 */
-  -webkit-border-radius: 3px;
-  /* Saf3-4, iOS 1-3.2, Android <1.6 */
-  border-radius: 3px;
-  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-  float: left;
-  margin: 3px 5px;
-  padding: 0.2em 0.5em;
-  list-style: none;
-}
 
-/* line 276, sass/base.scss */
+/* line 273, sass/base.scss */
 .project-hackers {
   margin: 0.5em 0em 0em 0em;
   font-size: 0.9em;
 }
 
-/* line 281, sass/base.scss */
+/* line 278, sass/base.scss */
 .project-hackers .hacker {
   font-size: 0.9em;
   margin: 3px 5px;
 }
 
+/* @end */
+/* @group Projects */
 /* @end */

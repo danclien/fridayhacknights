@@ -6,4 +6,6 @@ class Checkin < ActiveRecord::Base
   validates :event, :presence => true
   validates :hacker, :presence => true
   validates :project, :presence => true
+
+  validates_uniqueness_of :hacker_id, :scope => [:event_id, :project_id]
 end
