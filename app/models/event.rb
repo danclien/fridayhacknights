@@ -5,4 +5,9 @@ class Event < ActiveRecord::Base
 
   validates :start_date, :presence => true
   validates :end_date, :presence => true
+
+  def self.current
+    # TODO: make sure this is the actual current event
+    Event.last
+  end
 end

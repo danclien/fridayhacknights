@@ -20,19 +20,16 @@ class ProjectsController < InheritedResources::Base
       return show! :alert => 'Invalid project'
     end
 
-    # TODO: check for existing checkin
-
     checkin = Checkin.create \
       :hacker => current_hacker,
       :project_id => params[:id],
-      # TODO: make sure this is the actual current event
-      :event => Event.last
+      :event => Event.current
 
     if checkin.errors.length > 0
       puts "Checkin create errors: #{checkin.errors.inspect}"
-      redirect_to project_path(project), :notice => "You've already checked into this project."
+      return show! :notice => "You've already checked into this project."
     else
-      redirect_to project_path(project), :notice => "Checked in successfully."
+      return show! :notice => "Checked in successfully."
     end
   end
 end

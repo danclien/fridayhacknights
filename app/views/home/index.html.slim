@@ -43,7 +43,7 @@ section class="grid_12 image-gallery"
   h2 
     a href="/gallery"
       | Gallery
-    - @photos.in_groups_of(3) do |photogroup|
+    - @photos.first(6).in_groups_of(3) do |photogroup|
       .image-gallery-row
         - photogroup.each do |photo|
           - if !photo.nil?
