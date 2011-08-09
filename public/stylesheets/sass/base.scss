@@ -49,6 +49,28 @@ a:hover {
 	color: darken($text, 20%);
 }
 
+@mixin li-box {
+  background-color: desaturate(darken($bgcolor, 10%), 50%);
+     -moz-border-radius: 3px; /* FF1-3.6 */
+  -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+          border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+.item-list {
+  padding: 0; 
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+  li {
+    @include li-box;
+    float: left;
+    margin: 3px 5px;
+    padding: 0.2em 0.5em;
+    list-style: none;
+  }
+}
+
 
 /* @end */
 
@@ -234,15 +256,8 @@ ul.created-by li {
 
 /* @group Projects */
 
-@mixin list-box {
-	background-color: desaturate(darken($bgcolor, 10%), 50%);
-     -moz-border-radius: 3px; /* FF1-3.6 */
-  -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
-          border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-}
-
 .project.list-item {
-	@include list-box;
+	@include li-box;
   margin: 1em 0em 1em 0em;
 	padding: 10px;
 
@@ -252,21 +267,6 @@ ul.created-by li {
 .project.show {
 
 	.website { font-size: 0.5em; padding-left: 0.5em; }
-
-	.hackers-involved {
-		padding: 0; 
-		list-style: none;
-		a {
-		  text-decoration: none;
-		}
-	}
-	.hackers-involved li {
-		@include list-box;
-		float: left;
-		margin: 3px 5px;
-		padding: 0.2em 0.5em;
-		list-style: none;
-	}
 	
 }
 
@@ -283,4 +283,7 @@ ul.created-by li {
 /* @end */
 
 
+/* @group Projects */
+
+/* @end */
 
