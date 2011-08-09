@@ -6,9 +6,10 @@ $text: #333;
 $bgcolor: lighten(#fff2da, 2%);
 $headercolor: darken($blue, 15%);
 $headercolor: #333;
+$red: #a00;
 
 $imgborder: desaturate(darken($bgcolor, 20%), 50%);
-$imgborderhover: darken($imgborder, 10%);
+$imgborderhover: $red;
 
 
 html, body {
@@ -30,7 +31,7 @@ html, body {
 
 body {
 	background-color: $bgcolor;
-	border-top: 5px solid $orange;
+	border-top: 5px solid $red;
 	color: $text;
 	font-family: Abel, Helvetica;
 	font-size: 20px;
@@ -90,30 +91,35 @@ a:hover {
 
 .site-nav {
 	padding: 10px 0px 10px 0px;
+	ul {
+		margin: 0px 0px 0px 0px;
+		-webkit-padding-start: 0px;	
+		a {
+			color: $text;
+			text-decoration: none;
+		}
+		a:hover {
+			color: $darkorange;
+		}
+	}
+	li {
+		display: inline-block;
+	}
 }
 
-
-.site-nav ul {
-	margin: 0px 0px 0px 0px;
-	-webkit-padding-start: 0px;	
-}
 
 .site-nav-list {
 	float: left;
+	li {
+		margin: 0em 1.5em 0em 0em;	
+	}
 }
 
 .site-nav-account {
 	float: right;
-}
-
-
-.site-nav ul a {
-	color: $text;
-	text-decoration: none;
-}
-
-.site-nav ul a:hover {
-	color: $darkorange;
+	li {
+		margin: 0em 0em 0em 1.5em;
+	}
 }
 
 
@@ -126,17 +132,7 @@ a:hover {
 	
 }
 
-.site-nav li {
-	display: inline-block;
-}
 
-.site-nav-list li {
-	margin: 0em 1.5em 0em 0em;	
-}
-
-.site-nav-account li {
-	margin: 0em 0em 0em 1.5em;
-}
 
 .banner-image-holder {
 	background-image: url('/images/banner_bg.png');
