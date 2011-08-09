@@ -1,7 +1,7 @@
 .grid_12
   h2 = @hacker.name
   h3 Projects
-  - @hacker.projects.each do |project|
+  - @hacker.projects_involved.each do |project|
     p = project.name
   h3 Badges  
   - @hacker.badge_types.each do |badge|
