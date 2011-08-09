@@ -1,9 +1,10 @@
-/* line 1, sass/base.scss */
+/* Constants */
+/* line 10, sass/base.scss */
 html, body {
   height: 100%;
 }
 
-/* line 5, sass/base.scss */
+/* line 14, sass/base.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -12,84 +13,84 @@ html, body {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 12, sass/base.scss */
+/* line 21, sass/base.scss */
 .footer, .push {
   height: 58px;
   /* .push must be the same height as .footer */
 }
 
 /* @group General */
-/* line 18, sass/base.scss */
+/* line 27, sass/base.scss */
 body {
-  background-color: #203757;
+  background-color: #fff2da;
   border-top: 5px solid #587cb3;
-  color: #ddd;
+  color: #444444;
   font-family: Abel, Helvetica;
   font-size: 20px;
   margin: 0px;
 }
 
-/* line 27, sass/base.scss */
+/* line 36, sass/base.scss */
 h2 {
-  color: #aaa;
+  color: #444444;
 }
 
-/* line 31, sass/base.scss */
+/* line 40, sass/base.scss */
 h2 a {
   text-decoration: none;
 }
 
-/* line 35, sass/base.scss */
+/* line 44, sass/base.scss */
 a {
-  color: #ccc;
+  color: #444444;
 }
 
-/* line 39, sass/base.scss */
+/* line 48, sass/base.scss */
 a:hover {
-  color: #fff;
+  color: #111111;
 }
 
 /* @end */
 /* @group Header */
-/* line 51, sass/base.scss */
+/* line 60, sass/base.scss */
 .logo {
   float: left;
   height: 40px;
 }
 
-/* line 56, sass/base.scss */
+/* line 65, sass/base.scss */
 .site-nav {
   padding: 10px 0px 10px 0px;
 }
 
-/* line 61, sass/base.scss */
+/* line 70, sass/base.scss */
 .site-nav ul {
   margin: 0px 0px 0px 0px;
   -webkit-padding-start: 0px;
 }
 
-/* line 66, sass/base.scss */
+/* line 75, sass/base.scss */
 .site-nav-list {
   float: left;
 }
 
-/* line 70, sass/base.scss */
+/* line 79, sass/base.scss */
 .site-nav-account {
   float: right;
 }
 
-/* line 75, sass/base.scss */
+/* line 84, sass/base.scss */
 .site-nav ul a {
   color: #333;
   text-decoration: none;
 }
 
-/* line 80, sass/base.scss */
+/* line 89, sass/base.scss */
 .site-nav ul a:hover {
   color: #558;
 }
 
-/* line 85, sass/base.scss */
+/* line 94, sass/base.scss */
 .nav-bar {
   background-color: #eee;
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -98,76 +99,82 @@ a:hover {
   /* Saf3.0+, Chrome */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 1;
 }
 
-/* line 93, sass/base.scss */
+/* line 103, sass/base.scss */
 .site-nav li {
   display: inline-block;
 }
 
-/* line 97, sass/base.scss */
+/* line 107, sass/base.scss */
 .site-nav-list li {
   margin: 0em 1.5em 0em 0em;
 }
 
-/* line 101, sass/base.scss */
+/* line 111, sass/base.scss */
 .site-nav-account li {
   margin: 0em 0em 0em 1.5em;
 }
 
-/* line 105, sass/base.scss */
-.anchor-image-holder {
-  background-color: #152439;
-  border-bottom: 1px solid #666;
+/* line 115, sass/base.scss */
+.banner-image-holder {
+  background-color: #24354e;
 }
 
-/* line 111, sass/base.scss */
-.anchor-image img {
+/* line 119, sass/base.scss */
+.banner-image img {
   margin: 0.5em 0em 0.5em 0em;
 }
 
 /* @end */
 /* @group Contents */
-/* line 119, sass/base.scss */
+/* line 127, sass/base.scss */
 .contents {
+  -moz-box-shadow: 0px 0px 8px #000;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
   line-height: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-/* line 128, sass/base.scss */
+/* line 138, sass/base.scss */
 .image-gallery-row {
   margin: 8px 0px 8px 0px;
 }
 
-/* line 132, sass/base.scss */
+/* line 142, sass/base.scss */
 .image-gallery-row a {
   margin: 0px 5px 0px 5px;
 }
 
-/* line 137, sass/base.scss */
+/* line 147, sass/base.scss */
 .image-gallery-row img {
-  border: 8px solid #ccc;
+  border: 8px solid #dcc497;
   max-height: 284px;
   max-width: 284px;
 }
 
-/* line 143, sass/base.scss */
+/* line 153, sass/base.scss */
 .image-gallery-row a:hover img {
-  border-color: #fff;
+  border-color: #d0ae71;
 }
 
-/* line 148, sass/base.scss */
+/* line 158, sass/base.scss */
 .image-gallery-row a:first-child {
   margin-left: 0px;
 }
 
-/* line 152, sass/base.scss */
+/* line 162, sass/base.scss */
 .image-gallery-row a:last-child {
   margin-right: 0px;
 }
 
-/* line 161, sass/base.scss */
+/* line 171, sass/base.scss */
 ul.created-by li {
   float: left;
   list-style: none;
@@ -177,16 +184,15 @@ ul.created-by li {
 
 /* @end */
 /* @group Footer */
-/* line 174, sass/base.scss */
+/* line 184, sass/base.scss */
 .footer {
   background: #333;
   color: #ccc;
-  margin-top: 3em;
-  padding: 0.5em 0em 0em 0em;
+  padding: 0.5em 0em 0.5em 0em;
   text-align: center;
 }
 
-/* line 182, sass/base.scss */
+/* line 191, sass/base.scss */
 .created-by {
   font-size: 14px;
   margin-top: 0.5em;
@@ -194,36 +200,34 @@ ul.created-by li {
 
 /* @end */
 /* @group Gallery */
-/* line 191, sass/base.scss */
+/* line 200, sass/base.scss */
 .gallery-img {
-  border: 8px solid #ccc;
+  border: 8px solid #dcc497;
   max-width: 940px;
 }
 
 /* @end */
 /* @group Form */
-/* line 201, sass/base.scss */
+/* line 210, sass/base.scss */
 .form-box {
   margin: 1em auto 1em auto;
   width: 300px;
 }
-
-/* line 206, sass/base.scss */
+/* line 213, sass/base.scss */
 .form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
   width: 300px;
 }
 
-/* line 210, sass/base.scss */
+/* line 219, sass/base.scss */
 .form-box-wide {
   width: 600px;
 }
-
-/* line 214, sass/base.scss */
+/* line 221, sass/base.scss */
 .form-box-wide input[type=text], .form-box-wide input[type=email], .form-box-wide input[type=password], .form-box-wide input[type=submit] {
   width: 600px;
 }
 
-/* line 218, sass/base.scss */
+/* line 226, sass/base.scss */
 .remember-me-box label {
   margin-left: 0.5em;
   position: relative;
@@ -232,9 +236,9 @@ ul.created-by li {
 
 /* @end */
 /* @group Projects */
-/* line 239, sass/base.scss */
+/* line 244, sass/base.scss */
 .project.list-item {
-  background-color: #536886;
+  background-color: #e9dabd;
   -moz-border-radius: 3px;
   /* FF1-3.6 */
   -webkit-border-radius: 3px;
@@ -244,28 +248,28 @@ ul.created-by li {
   margin: 1em 0em 1em 0em;
   padding: 10px;
 }
-/* line 244, sass/base.scss */
+/* line 249, sass/base.scss */
 .project.list-item h2 {
   margin: 0px 0px 0.3em 0px;
 }
 
-/* line 249, sass/base.scss */
+/* line 254, sass/base.scss */
 .project.show .website {
   font-size: 0.5em;
   padding-left: 0.5em;
 }
-/* line 251, sass/base.scss */
+/* line 256, sass/base.scss */
 .project.show .hackers-involved {
   padding: 0;
   list-style: none;
 }
-/* line 254, sass/base.scss */
+/* line 259, sass/base.scss */
 .project.show .hackers-involved a {
   text-decoration: none;
 }
-/* line 258, sass/base.scss */
+/* line 263, sass/base.scss */
 .project.show .hackers-involved li {
-  background-color: #536886;
+  background-color: #e9dabd;
   -moz-border-radius: 3px;
   /* FF1-3.6 */
   -webkit-border-radius: 3px;
@@ -278,13 +282,13 @@ ul.created-by li {
   list-style: none;
 }
 
-/* line 268, sass/base.scss */
+/* line 273, sass/base.scss */
 .project-hackers {
   margin: 0.5em 0em 0em 0em;
   font-size: 0.9em;
 }
 
-/* line 273, sass/base.scss */
+/* line 278, sass/base.scss */
 .project-hackers .hacker {
   font-size: 0.9em;
   margin: 3px 5px;
