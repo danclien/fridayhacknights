@@ -1,16 +1,16 @@
 /* Constants */
 $blue: #587CB3;
 $orange: #ffa210;
-$darkorange: darken($orange, 10%);
+$darkorange: darken($orange, 15%);
 $text: #333;
 $bgcolor: lighten(#fff2da, 2%);
-$red: #a00;
+$red: desaturate(#800, 10%);
 
 $header-color: #372f2d;
 $box-color: desaturate(darken($bgcolor, 10%), 50%);
 
 $imgborder: desaturate(darken($bgcolor, 20%), 50%);
-$imgborderhover: $red;
+$imgborderhover: $darkorange;
 
 @import "compass/css3";
 
@@ -33,8 +33,8 @@ html, body {
 
 body {
 	background-color: $bgcolor;
-	border-top: 5px solid $red;
-  font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	border-top: 5px solid $orange;
+  font-family: Helvetica;
   color: $text;
   font-size: 20px;
   margin: 0px;
@@ -234,7 +234,7 @@ ul.created-by li {
   @include text-shadow(#413E3E,1px,1px);
 	background: $header-color;
 	color: #FFF6E4;
-  border-top: 1px solid #524947;
+	border-top: 2px solid $darkorange;
 	padding: 0.5em 0em 0.5em 0em;
 	text-align: center;
 }

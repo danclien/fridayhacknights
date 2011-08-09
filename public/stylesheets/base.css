@@ -23,8 +23,8 @@ html, body {
 /* line 34, sass/base.scss */
 body {
   background-color: #fff6e4;
-  border-top: 5px solid #aa0000;
-  font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  border-top: 5px solid #ffa210;
+  font-family: Helvetica;
   color: #333333;
   font-size: 20px;
   margin: 0px;
@@ -47,7 +47,7 @@ a {
 
 /* line 55, sass/base.scss */
 a:hover {
-  color: #dc8600;
+  color: #c37700;
 }
 
 /* line 73, sass/base.scss */
@@ -144,7 +144,7 @@ h1 img.icon {
 }
 /* line 127, sass/base.scss */
 .site-nav ul a:hover {
-  color: #dc8600;
+  color: #c37700;
 }
 /* line 131, sass/base.scss */
 .site-nav li {
@@ -226,7 +226,7 @@ h1 img.icon {
 
 /* line 202, sass/base.scss */
 .image-gallery-row a:hover img {
-  border-color: #aa0000;
+  border-color: #c37700;
 }
 
 /* line 207, sass/base.scss */
@@ -254,7 +254,7 @@ ul.created-by li {
   text-shadow: #413e3e 1px 1px 1px;
   background: #372f2d;
   color: #FFF6E4;
-  border-top: 1px solid #524947;
+  border-top: 2px solid #c37700;
   padding: 0.5em 0em 0.5em 0em;
   text-align: center;
 }
