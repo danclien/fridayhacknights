@@ -15,22 +15,23 @@
 
     h1
       = @project.name
+      img.icon src="/images/icons/folder.png"
+
+    .description.light-box.grid_7
+      p
+        = @project.description
+    
+    .light-box.bp.grid_3
       - if @project.website
-        span.website = link_to 'Project Website', @project.website
+        .website
+          h3 Website:
+          a href=@project.website = @project.website
 
-    p.description
-      = @project.description
+      .project-hackers
+        h3 Hackers Involved:
 
-    h3 Hackers Involved:
+        ul.hackers-involved.item-list
+          = hacker_list @project.hackers_involved
+        .clear
+    
 
-    ul.hackers-involved.item-list
-      - @project.hackers_involved.each do |hacker|
-        a href=hacker_path(hacker)
-          li
-            .name = hacker.name
-      li.clear
-    .clear
-
-    = link_to 'Edit', edit_project_path(@project)
-    | &nbsp;
-    = link_to 'Back', projects_path

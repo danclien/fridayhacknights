@@ -1,14 +1,15 @@
 .grid_12
-  h1 Projects
-  
-  - if hacker_signed_in?
-    = link_to 'New Project', new_project_path
+  .title
+    h1 Projects
+
+    - if hacker_signed_in?
+      = link_to 'New Project', new_project_path
 
   - @projects.each do |project|
-    .project.list-item
+    .project.light-box
       h2 = link_to project.name, project_path(project)
       .desc #{project.description}
-      div.project-hackers
-        | Hackers: 
-        = project.hackers_involved.map {|h| h.name}.join ', '
+      .project-hackers
+        = hacker_list project.hackers_involved
+        .clear
 

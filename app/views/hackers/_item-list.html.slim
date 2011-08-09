@@ -1,0 +1,8 @@
+ul.item-list
+  - hackers.each do |hacker|
+    li
+      a href=hacker_path(hacker)
+        .content
+          .icon.person.lfloat
+          | &bull;&nbsp;
+          = hacker.name

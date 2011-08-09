@@ -4,12 +4,14 @@ $orange: #ffa210;
 $darkorange: darken($orange, 10%);
 $text: #333;
 $bgcolor: lighten(#fff2da, 2%);
-$headercolor: darken($blue, 15%);
-$headercolor: #333;
+
+$header-color: #372f2d;
+$box-color: desaturate(darken($bgcolor, 10%), 50%);
 
 $imgborder: desaturate(darken($bgcolor, 20%), 50%);
 $imgborderhover: darken($imgborder, 10%);
 
+@import "compass/css3";
 
 html, body {
 	height: 100%;
@@ -31,14 +33,16 @@ html, body {
 body {
 	background-color: $bgcolor;
 	border-top: 5px solid $orange;
-	color: $text;
-	font-family: Abel, Helvetica;
-	font-size: 20px;
-	margin: 0px;
+  font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: $text;
+  font-size: 20px;
+  margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $headercolor;
+  color: $header-color;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+//  font-weight: normal;
 }
 
 h2 a {
@@ -53,12 +57,23 @@ a:hover {
 	color: $darkorange;
 }
 
-@mixin li-box {
-  background-color: desaturate(darken($bgcolor, 10%), 50%);
+@mixin light-box {
+  background-color: lighten($box-color, 10%);
+  border: 1px solid darken($box-color, 10%);
+}
+@mixin dark-box {
+  background: darken($box-color, 5%);
+  border: 1px solid lighten($header-color, 40%);
+}
+@mixin rounded {
      -moz-border-radius: 3px; /* FF1-3.6 */
   -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
           border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
 }
+
+.light-box { @include rounded; @include light-box; padding: 0 20px; }
+.light-box.bp { padding-bottom: 20px; }
+.light-box.sp { padding-left: 20px; padding-right: 20px; }
 
 .item-list {
   padding: 0; 
@@ -67,14 +82,27 @@ a:hover {
     text-decoration: none;
   }
   li {
-    @include li-box;
+    margin: 0 10px 0 0;
     float: left;
-    margin: 3px 5px;
+  }
+  li .content {
+    @include rounded;
+    @include dark-box;
     padding: 0.2em 0.5em;
     list-style: none;
+    .icon {
+      margin: 7px 6px 0 0;
+    }
   }
 }
 
+
+h1 img.icon {
+  @include rounded;
+  @include dark-box;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
 
 /* @end */
 
@@ -155,7 +183,8 @@ a:hover {
   -webkit-box-shadow: 0px 0px 8px #000; /* Saf3.0+, Chrome */
           box-shadow: 0px 0px 8px #000; /* Opera 10.5, IE9, FF4+, Chrome 10+ */	line-height: 1.5em;
 	padding-top: 1em;
-	padding-bottom: 1em;	
+	padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
 }
 
 .image-gallery {
@@ -208,8 +237,10 @@ ul.created-by li {
 
 
 .footer {
-	background: #333;
-	color: #ccc;
+  @include text-shadow(#413E3E,1px,1px);
+	background: $header-color;
+	color: #FFF6E4;
+  border-top: 1px solid #524947;
 	padding: 0.5em 0em 0.5em 0em;
 	text-align: center;
 }
@@ -260,34 +291,46 @@ ul.created-by li {
 
 /* @group Projects */
 
-.project.list-item {
-	@include li-box;
-  margin: 1em 0em 1em 0em;
-	padding: 10px;
+.title {
+  padding-bottom: 20px;
+}
 
-	h2 { margin: 0px 0px 0.3em 0px; }
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+	padding: 20px;
+	h2 { margin: 0px 0px 20px 0px; }
+  h3 { margin: 0px 0px 20px 0px; }
 }
 
 .project.show {
 
-	.website { font-size: 0.5em; padding-left: 0.5em; }
-	
-}
+	.website {
+    h3 { margin-bottom: 5px; }
+  }
 
-.project-hackers {
-  margin: 0.5em 0em 0em 0em;
-  font-size: 0.9em;
-}
-
-.project-hackers .hacker {
-  font-size: 0.9em;
-  margin: 3px 5px;
+  .project-hackers {
+    
+  }
+	.description {
+    margin-left: 0; 
+  }
 }
 
 /* @end */
 
 
-/* @group Projects */
+/* @group Hackers */
+
+.hacker.show {
+  
+}
 
 /* @end */
 
+.icon { width:16px; height:16px; background: no-repeat; }
+.icon.person { background-image: url(/images/icons/person.png); }
+.icon.folder { background-image: url(/images/icons/folder.png); }
+.icon.file   { background-image: url(/images/icons/file.png); }
+
+.lfloat { float: left; }
+.rfloat { float: right; }
