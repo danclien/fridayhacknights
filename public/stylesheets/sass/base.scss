@@ -34,7 +34,7 @@ html, body {
 body {
 	background-color: $bgcolor;
 	border-top: 5px solid $orange;
-  font-family: Helvetica;
+  font-family: Baskerville;
   color: $text;
   font-size: 20px;
   margin: 0px;
@@ -42,6 +42,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $header-color;
+  font-family: Helvetica;
 }
 
 h2 a {
@@ -116,10 +117,11 @@ h1 img.icon {
 }
 
 .site-nav {
+  font-family: Helvetica;
 	padding: 10px 0px 10px 0px;
 	ul {
 		margin: 0px 0px 0px 0px;
-		-webkit-padding-start: 0px;	
+		-webkit-padding-start: 0px;
 		a {
 			color: $text;
 			text-decoration: none;
@@ -137,7 +139,7 @@ h1 img.icon {
 .site-nav-list {
 	float: left;
 	li {
-		margin: 0em 1.5em 0em 0em;	
+		margin: 0em 1.5em 0em 0em;
 	}
 }
 
@@ -232,6 +234,7 @@ ul.created-by li {
 
 .footer {
   @include text-shadow(#413E3E,1px,1px);
+  font-family: Helvetica;
 	background: $header-color;
 	color: #FFF6E4;
 	border-top: 2px solid $darkorange;
@@ -296,6 +299,34 @@ ul.created-by li {
   h3 { margin: 0px 0px 20px 0px; }
 }
 
+.project.index {
+
+  a { text-decoration: none; }
+  .view {
+    @include rounded;
+    @include dark-box;
+    border: 1px solid $header-color;
+    margin: 0 10px 0 0;
+    padding: 4px 8px;
+    .icon {
+      float: left;
+      margin: 6px 3px 0 0;
+    }
+  }
+
+  .divider {
+    float: left;
+    height: 43px;
+    border-left: 1px solid lighten($header-color, 55%);
+    margin: -3px 12px 0 3px;
+    padding-top: 4px;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+}
+
 .project.show {
 
 	.website {
@@ -306,7 +337,7 @@ ul.created-by li {
     
   }
 	.description {
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
 
@@ -325,6 +356,7 @@ ul.created-by li {
 .icon.person { background-image: url(/images/icons/person.png); }
 .icon.folder { background-image: url(/images/icons/folder.png); }
 .icon.file   { background-image: url(/images/icons/file.png); }
+.icon.zoom   { background-image: url(/images/icons/zoom.png); }
 
 .lfloat { float: left; }
 .rfloat { float: right; }
