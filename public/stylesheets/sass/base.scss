@@ -1,9 +1,9 @@
 /* Constants */
 $blue: #587CB3;
 $orange: #ff7939;
-$darkorange: $orange;
+$darkorange: darken($orange, 20%);
 $text: #333;
-$bgcolor: lighten(#fff2da, 2%);
+$bgcolor: #fff8ea;
 $red: desaturate(#800, 10%);
 
 $header-color: #372f2d;
@@ -33,7 +33,7 @@ html, body {
 
 body {
 	background-color: $bgcolor;
-	border-top: 5px solid $orange;
+	border-top: 4px solid $orange;
   font-family: Baskerville;
   color: $text;
   font-size: 20px;
@@ -152,7 +152,7 @@ h1 img.icon {
 
 
 .nav-bar {
-	background-color: #fff;
+	background-color: $bgcolor;
      -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* FF3.5 - 3.6 */
   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Saf3.0+, Chrome */
           box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Opera 10.5, IE9, FF4+, Chrome 10+ */	
