@@ -24,8 +24,12 @@ class Event < ActiveRecord::Base
   end
 
   def self.current
-    return next_active if !next_active.nil?
-    return last_active if !last_active.nil?
+    next_event = next_active
+    return next_event if !next_event.nil?
+    
+    last_event = last_active
+    return last_event if !last_event.nil?
+    
     Event.last
   end
 end
