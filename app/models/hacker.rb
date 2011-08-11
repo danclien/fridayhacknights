@@ -17,7 +17,7 @@ class Hacker < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :name, :skills, :website
 
-  validates :name, :presence => true
+  validates :name, :presence => true, :length => 3..20
 
   def projects_involved
     # rails bug. See https://github.com/rails/rails/issues/2078#issuecomment-1603743
