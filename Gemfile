@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
 gem 'inherited_resources'
+gem 'jquery-rails'
 
 gem 'devise'
 gem 'typus', :git => 'git://github.com/typus/typus.git'
