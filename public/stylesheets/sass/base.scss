@@ -1,6 +1,6 @@
 /* Constants */
 $blue: #587CB3;
-$orange: #ff7939;
+$orange: #F56006;
 $darkorange: darken($orange, 20%);
 $text: #372F2D;
 $soft-text: lighten($text, 30%);
@@ -11,7 +11,7 @@ $header-color: #372f2d;
 $box-color: desaturate(darken($bgcolor, 10%), 50%);
 
 $imgborder: desaturate(darken($bgcolor, 20%), 50%);
-$imgborderhover: $darkorange;
+$imgborderhover: $orange;
 
 $header-font: helvetica, arial, clean, sans-serif;
 $paragraph-font: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-	color: $darkorange;
+	color: $orange;
 }
 
 @mixin light-box {
@@ -136,7 +136,7 @@ h1 img.icon {
 			text-decoration: none;
 		}
 		a:hover {
-			color: $darkorange;
+			color: $orange;
 		}
 	}
 	li {

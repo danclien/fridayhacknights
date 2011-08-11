@@ -19,7 +19,7 @@ html, body {
 /* @group General */
 body {
   background-color: #fff8ea;
-  border-top: 4px solid #ff7939;
+  border-top: 4px solid #f56006;
   font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
   color: #372f2d;
   font-size: 20px;
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #d24400;
+  color: #f56006;
 }
 
 .light-box {
@@ -130,7 +130,7 @@ h1 img.icon {
   text-decoration: none;
 }
 .site-nav ul a:hover {
-  color: #d24400;
+  color: #f56006;
 }
 .site-nav li {
   display: inline-block;
@@ -199,7 +199,7 @@ h1 img.icon {
 }
 
 .image-gallery-row a:hover img {
-  border-color: #d24400;
+  border-color: #f56006;
 }
 
 .image-gallery-row a:first-child {
@@ -224,7 +224,7 @@ ul.created-by li {
   font-family: helvetica, arial, clean, sans-serif;
   background: #372f2d;
   color: #FFF6E4;
-  border-top: 2px solid #d24400;
+  border-top: 2px solid #913904;
   padding: 0.75em 0em 0.5em 0em;
   text-align: center;
 }
