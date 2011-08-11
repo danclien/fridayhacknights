@@ -20,7 +20,7 @@ html, body {
 body {
   background-color: #fff8ea;
   border-top: 4px solid #ff7939;
-  font-family: Baskerville;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
   color: #333333;
   font-size: 20px;
   margin: 0px;
@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #372f2d;
-  font-family: Helvetica;
+  font-family: helvetica, arial, clean, sans-serif;
 }
 
 h2 a {
@@ -112,7 +112,7 @@ h1 img.icon {
 }
 
 .site-nav {
-  font-family: Helvetica;
+  font-family: helvetica, arial, clean, sans-serif;
   padding: 10px 0px 10px 0px;
 }
 .site-nav ul {
@@ -215,7 +215,7 @@ ul.created-by li {
 /* @group Footer */
 .footer {
   text-shadow: #413e3e 1px 1px 1px;
-  font-family: Helvetica;
+  font-family: helvetica, arial, clean, sans-serif;
   background: #372f2d;
   color: #FFF6E4;
   border-top: 2px solid #d24400;

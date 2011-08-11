@@ -12,6 +12,9 @@ $box-color: desaturate(darken($bgcolor, 10%), 50%);
 $imgborder: desaturate(darken($bgcolor, 20%), 50%);
 $imgborderhover: $darkorange;
 
+$header-font: helvetica, arial, clean, sans-serif;
+$paragraph-font: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+
 @import "compass/css3";
 
 html, body {
@@ -34,7 +37,7 @@ html, body {
 body {
 	background-color: $bgcolor;
 	border-top: 4px solid $orange;
-  font-family: Baskerville;
+  font-family: $paragraph-font;
   color: $text;
   font-size: 20px;
   margin: 0px;
@@ -42,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $header-color;
-  font-family: Helvetica;
+  font-family: $header-font;
 }
 
 h2 a {
@@ -117,7 +120,7 @@ h1 img.icon {
 }
 
 .site-nav {
-  font-family: Helvetica;
+  font-family: $header-font;
 	padding: 10px 0px 10px 0px;
 	ul {
 		margin: 0px 0px 0px 0px;
@@ -234,7 +237,7 @@ ul.created-by li {
 
 .footer {
   @include text-shadow(#413E3E,1px,1px);
-  font-family: Helvetica;
+  font-family: $header-font;
 	background: $header-color;
 	color: #FFF6E4;
 	border-top: 2px solid $darkorange;
