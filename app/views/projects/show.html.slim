@@ -23,7 +23,7 @@
           - @project.checkins.each do |checkin|
             .checkin class=cycle('l-col','r-col')
               .description
-                = checkin.description || 'Checked in and worked on stuff.'
+                .content = checkin_description checkin
                 '
                 .sig
                   em.name
@@ -31,6 +31,13 @@
                     = link_to checkin.hacker.name, hacker_path(checkin.hacker)
                     '
                   span.date == checkin.created_at.to_date.to_s(:rfc822).gsub ' ', '&nbsp;'
+              - if checkin.event == Event.current && (checkin.hacker == current_hacker || @hacker_is_owner)
+
+                = form_tag check_out_path, :method => 'delete', :class => 'admin' do
+                  input type="button" name="edit_checkin" value="Edit Description"
+                  input.warning type="submit" name="delete_checkin" value="Delete"
+
+                  input type="hidden" name="hacker_id" value=checkin.hacker.id
           .clear
       
       - if hacker_signed_in?
@@ -38,9 +45,12 @@
         .checkin-input-wrap
           h3 Check Into This Project:
           = form_tag check_in_path(@project) do
-            label Short Description of what you did this event:
+
+            label Short Description of what you did this event (optional):
             textarea.lfloat name="description"
             input.lfloat type="submit" value="Check In"
+
+            input type="hidden" name="hacker_id" value=current_hacker.id
     
     .light-box.bp.grid_3
       
@@ -55,5 +65,22 @@
         ul.hackers-involved.item-list
           = hacker_list @project.hackers_involved
         .clear
-    
+
+- content_for :js do
+  javascript:
+    $('input[name=edit_checkin]').live('click', function () {
+
+      var hackerId = $(this).siblings('[name=hacker_id]').val()
+        , text = $(this).parent().siblings('.description').find('.content').text()
+        , textarea = $('textarea[name=description]')
+        , posY = textarea.offset().top
+      ;
+      $('html, body').animate({ scrollTop:posY }, {
+        duration: 200,
+        complete: function () {
+          textarea.val(text).focus();
+          textarea.siblings('[name=hacker_id]').val(hackerId);
+        }
+      });
+    });
 

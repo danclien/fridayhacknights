@@ -356,6 +356,16 @@ ul.created-by li {
   font-family: helvetica, arial, clean, sans-serif;
   color: #8b7772;
 }
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
 .project.show .checkin-input-wrap h3 {
   margin-bottom: 5px;
 }

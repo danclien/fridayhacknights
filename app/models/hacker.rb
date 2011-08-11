@@ -19,6 +19,10 @@ class Hacker < ActiveRecord::Base
 
   validates :name, :presence => true, :length => 3..20
 
+  def owns?(project)
+    self == project.owner
+  end
+
   def projects_involved
     # rails bug. See https://github.com/rails/rails/issues/2078#issuecomment-1603743
     # 
