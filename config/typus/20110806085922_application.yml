@@ -14,8 +14,8 @@ Checkin:
 
 Event:
   fields:
-    default: start_date, end_date, gallery_url
-    form: start_date, end_date, gallery_url
+    default: start_date, end_date, gallery_url, active
+    form: start_date, end_date, gallery_url, active
   order_by: 
   relationships: hackers, projects
   filters: created_at

@@ -6,8 +6,26 @@ class Event < ActiveRecord::Base
   validates :start_date, :presence => true
   validates :end_date, :presence => true
 
+  def self.next_active
+    Event.where("active=:active AND end_date >= :current_date", 
+        {:active => true, :current_date => DateTime.now})
+      .order("start_date")
+      .limit(1)
+      .first
+  end
+  
+  def self.last_active
+    Event
+      .where("active=:active AND start_date <= :current_date", 
+        {:active => true, :current_date => DateTime.now})
+      .order("start_date DESC")
+      .limit(1)
+      .first
+  end
+
   def self.current
-    # TODO: make sure this is the actual current event
+    return next_active if !next_active.nil?
+    return last_active if !last_active.nil?
     Event.last
   end
 end
