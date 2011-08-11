@@ -46,8 +46,14 @@ class ProjectsController < InheritedResources::Base
       return show! :alert => 'Invalid project'
     end
 
-    # TODO: delete checkin
+    hacker_id = current_hacker.owns?(project) ? params[:hacker_id] : current_hacker[:id]
 
-    return show! :notice => "Chilled out successfully."
+    checkin = Checkin.find_by_hacker_id_and_event_id_and_project_id(
+      hacker_id, Event.current[:id], project[:id]
+    )
+
+    checkin.destroy unless checkin.nil?
+
+    return show! :notice => "Checkin destroyed."
   end
 end
