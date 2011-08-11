@@ -4,10 +4,6 @@
 
   .project.show
 
-    - if hacker_signed_in?
-      = form_tag check_in_path(@project) do
-        = submit_tag 'Check In'
-
     - if @hacker_is_owner
       = link_to 'Edit', edit_project_path(@project)
       br
@@ -17,11 +13,20 @@
       = @project.name
       img.icon src="/images/icons/folder.png"
 
-    .description.light-box.grid_7
+    .description.light-box.bp.grid_7
       p
         = @project.description
+      - if hacker_signed_in?
+        .divider
+        .checkin
+          h3 Check Into This Project:
+          = form_tag check_in_path(@project) do
+            label Short Description of what you did this event:
+            textarea.lfloat name="description"
+            input.lfloat type="submit" value="Check In"
     
     .light-box.bp.grid_3
+      
       - if @project.website.present?
         .website
           h3 Website:

@@ -23,7 +23,8 @@ class ProjectsController < InheritedResources::Base
     checkin = Checkin.create \
       :hacker => current_hacker,
       :project_id => params[:id],
-      :event => Event.current
+      :event => Event.current,
+      :description => params[:description]
 
     if checkin.errors.length > 0
       puts "Checkin create errors: #{checkin.errors.inspect}"

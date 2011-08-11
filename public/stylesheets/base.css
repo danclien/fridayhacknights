@@ -21,7 +21,7 @@ body {
   background-color: #fff8ea;
   border-top: 4px solid #ff7939;
   font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
-  color: #333333;
+  color: #372f2d;
   font-size: 20px;
   margin: 0px;
 }
@@ -36,7 +36,7 @@ h2 a {
 }
 
 a {
-  color: #333333;
+  color: #372f2d;
 }
 
 a:hover {
@@ -91,6 +91,12 @@ a:hover {
   margin: 7px 6px 0 0;
 }
 
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
 h1 img.icon {
   -moz-border-radius: 3px;
   /* FF1-3.6 */
@@ -120,7 +126,7 @@ h1 img.icon {
   -webkit-padding-start: 0px;
 }
 .site-nav ul a {
-  color: #333333;
+  color: #372f2d;
   text-decoration: none;
 }
 .site-nav ul a:hover {
@@ -146,7 +152,7 @@ h1 img.icon {
 
 .nav-bar {
   background-color: #fff8ea;
-  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
   /* FF3.5 - 3.6 */
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   /* Saf3.0+, Chrome */
@@ -166,7 +172,7 @@ h1 img.icon {
 /* @end */
 /* @group Contents */
 .contents {
-  -moz-box-shadow: 0px 0px 8px #000;
+  -moz-box-shadow: -8px 0px 8px black;
   /* FF3.5 - 3.6 */
   -webkit-box-shadow: 0px 0px 8px #000;
   /* Saf3.0+, Chrome */
@@ -297,8 +303,7 @@ ul.created-by li {
 }
 .project.index .divider {
   float: left;
-  height: 43px;
-  border-left: 1px solid #c5bab8;
+  height: 41px;
   margin: -3px 12px 0 3px;
   padding-top: 4px;
 }
@@ -308,6 +313,22 @@ ul.created-by li {
 
 .project.show .website h3 {
   margin-bottom: 5px;
+}
+.project.show .checkin h3 {
+  margin-bottom: 5px;
+  color: #8b7772;
+}
+.project.show .checkin label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
 }
 .project.show .description {
   margin-left: 0;
