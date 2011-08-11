@@ -18,7 +18,7 @@ Event:
     form: start_date, end_date, gallery_url, active
   order_by: 
   relationships: hackers, projects
-  filters: created_at
+  filters: created_at, active
   search: 
   application: fridayhacknights
 
