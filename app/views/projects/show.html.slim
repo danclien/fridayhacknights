@@ -16,9 +16,26 @@
     .description.light-box.bp.grid_7
       p
         = @project.description
+      - if @project.checkins.length
+        .divider
+        .activity
+          h3 Recent Activity:
+          - @project.checkins.each do |checkin|
+            .checkin class=cycle('l-col','r-col')
+              .description
+                = checkin.description || 'Checked in and worked on stuff.'
+                '
+                .sig
+                  em.name
+                    ' &mdash;
+                    = link_to checkin.hacker.name, hacker_path(checkin.hacker)
+                    '
+                  span.date == checkin.created_at.to_date.to_s(:rfc822).gsub ' ', '&nbsp;'
+          .clear
+      
       - if hacker_signed_in?
         .divider
-        .checkin
+        .checkin-input-wrap
           h3 Check Into This Project:
           = form_tag check_in_path(@project) do
             label Short Description of what you did this event:
