@@ -16,7 +16,7 @@
     .description.light-box.bp.grid_7
       p
         = @project.description
-      - if @project.checkins.length
+      - if @project.checkins.length > 0
         .divider
         .activity
           h3 Recent Activity:
