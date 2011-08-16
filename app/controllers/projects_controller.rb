@@ -20,17 +20,40 @@ class ProjectsController < InheritedResources::Base
       return show! :alert => 'Invalid project'
     end
 
-    checkin = Checkin.create \
-      :hacker => current_hacker,
-      :project_id => params[:id],
-      :event => Event.current,
-      :description => params[:description]
+    hacker_id = current_hacker.owns?(project) ? params[:hacker_id] : current_hacker[:id]
+
+    checkin = Checkin.find_or_create_by_hacker_id_and_event_id_and_project_id(
+      hacker_id, Event.current[:id], project[:id]
+    )
+
+
+    checkin.update_attribute :description, params[:description]
 
     if checkin.errors.length > 0
-      puts "Checkin create errors: #{checkin.errors.inspect}"
+      puts "Checkin create errors: #{checkin.errors.inspect}, #{project.inspect}"
       return show! :notice => "You've already checked into this project."
-    else
+    elsif checkin.new_record?
       return show! :notice => "Checked in successfully."
+    else
+      return show! :notice => "Description updated successfully."
     end
+  end
+
+  def check_out
+    project = Project.find params[:id]
+
+    if project.nil?
+      return show! :alert => 'Invalid project'
+    end
+
+    hacker_id = current_hacker.owns?(project) ? params[:hacker_id] : current_hacker[:id]
+
+    checkin = Checkin.find_by_hacker_id_and_event_id_and_project_id(
+      hacker_id, Event.current[:id], project[:id]
+    )
+
+    checkin.destroy unless checkin.nil?
+
+    return show! :notice => "Checkin destroyed."
   end
 end

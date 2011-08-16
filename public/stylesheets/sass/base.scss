@@ -369,6 +369,19 @@ ul.created-by li {
       .name a { text-decoration: none; }
       .date { font-size: 0.6em; font-family: $header-font; color: $soft-text; }
     }
+
+    .admin {
+      text-align: right;
+      input[name=delete_checkin] {
+        color: #fff;
+        text-shadow: #333 0 1px 1px;
+
+        // taken from http://www.colorzilla.com/gradient-editor/ :3
+        background: #ff3019;
+        background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404));
+      }
+    }
   }
 
   .checkin-input-wrap {

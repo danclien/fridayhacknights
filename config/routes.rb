@@ -3,6 +3,7 @@ Fridayhacknights::Application.routes.draw do
   resources :badges
 
   post "projects/:id/checkin" => 'projects#check_in', :as => :check_in
+  delete "projects/:id/checkin" => 'projects#check_out', :as => :check_out
   get "gallery/index"
 
   get "hacker/:id" => 'hackers#show', :as => :hacker
