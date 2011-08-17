@@ -1,0 +1,19 @@
+.menu
+  .container_12
+    nav.grid_12.site-nav
+      ul
+        li
+          = link_to "Home", root_url
+        li
+          = link_to "Projects", :projects
+        li
+          = link_to "Gallery", :gallery
+        li
+          = link_to "GitHub", "https://github.com/danclien/fridayhacknights"
+      ul.account-nav
+        - if hacker_signed_in?
+          li= link_to 'Sign out', :destroy_hacker_session, :method => :delete
+        - else
+          li= link_to 'Sign in', :new_hacker_session
+          li= link_to 'Sign up', :new_hacker_registration
+.clear
