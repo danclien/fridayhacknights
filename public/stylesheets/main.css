@@ -20,7 +20,7 @@ html, body {
   /* .push must be the same height as .footer */
 }
 
-/* @group General */
+/* General */
 body {
   background-color: #fff8ea;
   border-top: 4px solid #f56006;
@@ -46,8 +46,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
-/* @end */
-/* @group Header */
+/* Header */
 .logo {
   float: left;
   height: 40px;
@@ -104,8 +103,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   width: 960px;
 }
 
-/* @end */
-/* @group Contents */
+/* Contents */
 .contents {
   -moz-box-shadow: -8px 0px 8px black;
   /* FF3.5 - 3.6 */
@@ -145,8 +143,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-right: 0px;
 }
 
-/* @end */
-/* @group Footer */
+/* Footer */
 .footer {
   text-shadow: #413e3e 1px 1px 1px;
   background: #372f2d;
@@ -176,15 +173,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   padding: 0.2em 0.5em;
 }
 
-/* @end */
-/* @group Gallery */
+/* Gallery */
 .gallery-img {
   border: 8px solid #e0cca3;
   max-width: 940px;
 }
 
-/* @end */
-/* @group Form */
+/* Form */
 .form-box {
   margin: 1em auto 1em auto;
   width: 300px;
@@ -206,7 +201,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   top: -5px;
 }
 
-/* @end */
+/* Other */
 .light-box {
   -moz-border-radius: 3px;
   /* FF1-3.6 */

@@ -17,7 +17,7 @@ html, body {
 	height: 50px; /* .push must be the same height as .footer */
 }
 
-/* @group General */
+/* General */
 
 body {
 	background-color: $bgcolor;
@@ -44,9 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* @end */
-
-/* @group Header */
+/* Header */
 
 .header {
 }
@@ -104,9 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 960px;
 }
 
-/* @end */
-
-/* @group Contents */
+/* Contents */
 
 .contents {
      -moz-box-shadow: -8px 0px 8px #000; /* FF3.5 - 3.6 */
@@ -148,9 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 0px;
 }
 
-/* @end */
-
-/* @group Footer */
+/* Footer */
 
 
 .footer {
@@ -183,19 +177,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* @end */
-
-/* @group Gallery */
+/* Gallery */
 
 .gallery-img {
 	border: 8px solid $imgborder;
 	max-width: 940px;
 }
 
-/* @end */
 
-
-/* @group Form */
+/* Form */
 
 .form-box {
 	margin: 1em auto 1em auto;
@@ -218,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: -5px;
 }
 
-/* @end */
+/* Other */
 
 .light-box { @include rounded; @include light-box; padding: 0 20px; }
 
