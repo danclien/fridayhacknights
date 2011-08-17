@@ -81,46 +81,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.light-box { @include rounded; @include light-box; padding: 0 20px; }
-
-.tp { padding-bottom: 20px; }
-.bp { padding-bottom: 20px; }
-.sp { padding-left: 20px; padding-right: 20px; }
-
-.item-list {
-  padding: 0; 
-  list-style: none;
-  a {
-    text-decoration: none;
-  }
-  li {
-    margin: 0 10px 0 0;
-    float: left;
-  }
-  li .content {
-    @include rounded;
-    @include dark-box;
-    padding: 0.2em 0.5em;
-    list-style: none;
-    .icon {
-      margin: 7px 6px 0 0;
-    }
-  }
-}
-
-.divider {
-  border: 1px solid lighten($header-color, 55%);
-  border-right: none;
-  border-bottom: none;
-}
-
-h1 img.icon {
-  @include rounded;
-  @include dark-box;
-  margin: 2px 0 0 7px;
-  padding: 4px;
-}
-
 /* @end */
 
 /* @group Header */
@@ -163,28 +123,31 @@ h1 img.icon {
 }
 
 
-.nav-bar {
+.menu {
 	background-color: $bgcolor;
-     -moz-box-shadow: -10px 0px 10px rgba(0,0,0,0.5); /* FF3.5 - 3.6 */
-  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Saf3.0+, Chrome */
-          box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Opera 10.5, IE9, FF4+, Chrome 10+ */	
-	z-index: 1;
-	
+  moz-box-shadow: -8px 0px 8px #000; /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000; /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000; /* Opera 10.5, IE9, FF4+, Chrome 10+ */;
+  z-index: 2;	
 }
 
 
 
 .banner-image-holder {
 	background-image: url('/images/banner_bg.png');
+	z-index: 0;
 }
 
 .banner-image img {
+  height: 242px;
 	margin: 0.5em 0em 0em 0em;
+	width: 960px;
 }
 
 /* @end */
 
 /* @group Contents */
+
 
 .contents {
      -moz-box-shadow: -8px 0px 8px #000; /* FF3.5 - 3.6 */
@@ -402,6 +365,48 @@ ul.created-by li {
 /* @group Hackers */
 
 /* @end */
+
+
+.light-box { @include rounded; @include light-box; padding: 0 20px; }
+
+.tp { padding-bottom: 20px; }
+.bp { padding-bottom: 20px; }
+.sp { padding-left: 20px; padding-right: 20px; }
+
+.item-list {
+  padding: 0; 
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+  li {
+    margin: 0 10px 0 0;
+    float: left;
+  }
+  li .content {
+    @include rounded;
+    @include dark-box;
+    padding: 0.2em 0.5em;
+    list-style: none;
+    .icon {
+      margin: 7px 6px 0 0;
+    }
+  }
+}
+
+.divider {
+  border: 1px solid lighten($header-color, 55%);
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  @include rounded;
+  @include dark-box;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
 
 .icon { width:16px; height:16px; background: no-repeat; }
 .icon.person { background-image: url(/images/icons/person.png); }
