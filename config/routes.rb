@@ -1,6 +1,7 @@
 Fridayhacknights::Application.routes.draw do
-
   resources :badges
+  
+  root :to => 'home#index'
 
   post "projects/:id/checkin" => 'projects#check_in', :as => :check_in
   delete "projects/:id/checkin" => 'projects#check_out', :as => :check_out

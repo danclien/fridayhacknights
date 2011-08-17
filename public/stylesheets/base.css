@@ -1,18 +1,22 @@
-/* Constants */
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 .wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -58px;
+  margin: 0 auto -50px;
   /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
-  height: 58px;
+  height: 50px;
   /* .push must be the same height as .footer */
 }
 
@@ -26,21 +30,20 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #372f2d;
-  font-family: helvetica, arial, clean, sans-serif;
-}
-
-h2 a {
-  text-decoration: none;
-}
-
 a {
   color: #372f2d;
 }
 
 a:hover {
   color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
 }
 
 .light-box {
@@ -122,8 +125,14 @@ h1 img.icon {
 }
 
 .site-nav {
+  float: left;
   font-family: helvetica, arial, clean, sans-serif;
   padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
 }
 .site-nav ul {
   margin: 0px 0px 0px 0px;
@@ -136,21 +145,11 @@ h1 img.icon {
 .site-nav ul a:hover {
   color: #f56006;
 }
-.site-nav li {
-  display: inline-block;
-}
 
-.site-nav-list {
-  float: left;
-}
-.site-nav-list li {
-  margin: 0em 1.5em 0em 0em;
-}
-
-.site-nav-account {
+.account-nav {
   float: right;
 }
-.site-nav-account li {
+.account-nav li {
   margin: 0em 0em 0em 1.5em;
 }
 

@@ -129,8 +129,8 @@ DEPENDENCIES
   devise
   httparty
   inherited_resources
-  pg
   jquery-rails
+  pg
   rafaels-picasa
   rails (= 3.0.9)
   slim

@@ -10,14 +10,13 @@ html
     = csrf_meta_tag
   body
     .wrapper
-      = render 'shared/nav-bar'
+      = render 'shared/menu'
       .banner-image-holder
         .container_12
-          header class="header"
-            section class="banner-image"
+          header.header
+            section.banner-image
               img src="/images/banner_orange.png"
             .clear
-          section class="blah"
       .clear
       .contents
         .container_12
@@ -25,6 +24,5 @@ html
       .push
       .clear
     = render 'shared/footer'
-
     = yield :js
 
