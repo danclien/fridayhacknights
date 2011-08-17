@@ -1,41 +1,4 @@
-@import "compass/css3";
-
-/* Colors */
-$bgcolor: #fff8ea;
-$header-color: #372f2d;
-$orange: #F56006;
-$text: #372F2D;
-
-$box-color: desaturate(darken($bgcolor, 10%), 50%);
-$darkorange: darken($orange, 20%);
-$soft-text: lighten($text, 30%);
-
-$imgborder: desaturate(darken($bgcolor, 20%), 50%);
-$imgborderhover: $orange;
-
-/* Fonts */
-$header-font: helvetica, arial, clean, sans-serif;
-$paragraph-font: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
-
-/* Mixins */
-@mixin light-box {
-  background-color: lighten($box-color, 10%);
-  border: 1px solid darken($box-color, 10%);
-}
-@mixin mild-box {
-  background: lighten($box-color, 4%);
-  border: 1px solid lighten($header-color, 40%);
-}
-@mixin dark-box {
-  background: darken($box-color, 5%);
-  border: 1px solid lighten($header-color, 40%);
-}
-@mixin rounded {
-     -moz-border-radius: 3px; /* FF1-3.6 */
-  -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
-          border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-}
-
+@import "base"
 
 /* Sticky footer */
 html, body {
@@ -122,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-
 .menu {
 	background-color: $bgcolor;
   moz-box-shadow: -8px 0px 8px #000; /* FF3.5 - 3.6 */
@@ -130,8 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 8px #000; /* Opera 10.5, IE9, FF4+, Chrome 10+ */;
   z-index: 2;	
 }
-
-
 
 .banner-image-holder {
 	background-image: url('/images/banner_bg.png');
@@ -147,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
 /* @end */
 
 /* @group Contents */
-
 
 .contents {
      -moz-box-shadow: -8px 0px 8px #000; /* FF3.5 - 3.6 */
@@ -189,17 +148,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 0px;
 }
 
-ul.created-by {
-	
-	
-}
-
-ul.created-by li {
-	float: left;
-	list-style: none;
-	margin: 3px 5px;
-	padding: 0.2em 0.5em;
-}
 
 
 /* @end */
@@ -221,6 +169,14 @@ ul.created-by li {
   font-size: 14px;
   margin-top: 0.5em;
 }
+
+.created-by li {
+	float: left;
+	list-style: none;
+	margin: 3px 5px;
+	padding: 0.2em 0.5em;
+}
+
 
 /* @end */
 
@@ -244,7 +200,6 @@ ul.created-by li {
   }
 }
 
-
 .wide {
 	width: 600px;
   input[type=text], input[type=email], input[type=password], input[type=submit]{
@@ -259,113 +214,6 @@ ul.created-by li {
 }
 
 /* @end */
-
-
-/* @group Projects */
-
-.title {
-  padding-bottom: 20px;
-}
-
-.project.light-box {
-  margin: 1em 0em 1em 0em;
-	padding: 20px;
-	h2 { margin: 0px 0px 20px 0px; }
-  h3 { margin: 0px 0px 20px 0px; }
-}
-
-.project.index {
-
-  a { text-decoration: none; }
-  .view {
-    @include rounded;
-    @include dark-box;
-    border: 1px solid $header-color;
-    margin: 0 10px 0 0;
-    padding: 4px 8px;
-    .icon {
-      float: left;
-      margin: 6px 3px 0 0;
-    }
-  }
-
-  .divider {
-    float: left;
-    height: 41px;
-    margin: -3px 12px 0 3px;
-    padding-top: 4px;
-  }
-
-  .description {
-    font-size: 0.9em;
-  }
-
-  .project-hackers {
-    ul.item-list li .content { @include mild-box; }
-  }
-}
-
-.project.show {
-
-	.website {
-    h3 { margin-bottom: 5px; }
-  }
-
-  .activity {
-    padding-left: 10px;
-    .checkin {
-      @include rounded;
-      @include mild-box;
-      padding: 8px;
-      width: 45%;
-      float: left;
-      margin-bottom: 3%;
-    }
-    .checkin.l-col { margin-right: 3%; }
-
-    .description {
-      .sig { white-space: nowrap; }
-      .name { font-size: 0.8em; }
-      .name a { text-decoration: none; }
-      .date { font-size: 0.6em; font-family: $header-font; color: $soft-text; }
-    }
-
-    .admin {
-      text-align: right;
-      input[name=delete_checkin] {
-        color: #fff;
-        text-shadow: #333 0 1px 1px;
-
-        // taken from http://www.colorzilla.com/gradient-editor/ :3
-        background: #ff3019;
-        background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404));
-      }
-    }
-  }
-
-  .checkin-input-wrap {
-    h3 { margin-bottom: 5px; }
-    label { font-size: 0.7em; font-family: $header-font; }
-    textarea { height: 50px; width: 373px; }
-    input[type=submit] { margin: 0 0 0 18px; font-size: 30px; }
-  }
-  .project-hackers {
-    li { margin-bottom: 10px; }
-  }
-	& > .description {
-    margin-left: 0;
-    h3 { color: $soft-text; }
-  }
-}
-
-/* @end */
-
-
-/* @group Hackers */
-
-/* @end */
-
 
 .light-box { @include rounded; @include light-box; padding: 0 20px; }
 

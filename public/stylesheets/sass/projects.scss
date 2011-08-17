@@ -1,0 +1,101 @@
+@import "base"
+
+/* @group Projects */
+
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+	padding: 20px;
+	h2 { margin: 0px 0px 20px 0px; }
+  h3 { margin: 0px 0px 20px 0px; }
+}
+
+.project.index {
+
+  a { text-decoration: none; }
+  .view {
+    @include rounded;
+    @include dark-box;
+    border: 1px solid $header-color;
+    margin: 0 10px 0 0;
+    padding: 4px 8px;
+    .icon {
+      float: left;
+      margin: 6px 3px 0 0;
+    }
+  }
+
+  .divider {
+    float: left;
+    height: 41px;
+    margin: -3px 12px 0 3px;
+    padding-top: 4px;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .project-hackers {
+    ul.item-list li .content { @include mild-box; }
+  }
+}
+
+.project.show {
+
+	.website {
+    h3 { margin-bottom: 5px; }
+  }
+
+  .activity {
+    padding-left: 10px;
+    .checkin {
+      @include rounded;
+      @include mild-box;
+      padding: 8px;
+      width: 45%;
+      float: left;
+      margin-bottom: 3%;
+    }
+    .checkin.l-col { margin-right: 3%; }
+
+    .description {
+      .sig { white-space: nowrap; }
+      .name { font-size: 0.8em; }
+      .name a { text-decoration: none; }
+      .date { font-size: 0.6em; font-family: $header-font; color: $soft-text; }
+    }
+
+    .admin {
+      text-align: right;
+      input[name=delete_checkin] {
+        color: #fff;
+        text-shadow: #333 0 1px 1px;
+
+        // taken from http://www.colorzilla.com/gradient-editor/ :3
+        background: #ff3019;
+        background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404));
+      }
+    }
+  }
+
+  .checkin-input-wrap {
+    h3 { margin-bottom: 5px; }
+    label { font-size: 0.7em; font-family: $header-font; }
+    textarea { height: 50px; width: 373px; }
+    input[type=submit] { margin: 0 0 0 18px; font-size: 30px; }
+  }
+  .project-hackers {
+    li { margin-bottom: 10px; }
+  }
+	& > .description {
+    margin-left: 0;
+    h3 { color: $soft-text; }
+  }
+}
+
+/* @end */
