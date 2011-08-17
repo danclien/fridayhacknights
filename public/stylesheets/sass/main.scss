@@ -1,4 +1,4 @@
-@import "base"
+@import "base";
 
 /* Sticky footer */
 html, body {
@@ -155,24 +155,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   @include text-shadow(#413E3E,1px,1px);
-  font-family: $header-font;
 	background: $header-color;
-	color: #FFF6E4;
 	border-top: 2px solid $darkorange;
+	color: #FFF6E4;
+  font-family: $header-font;
 	padding: 0.75em 0em 0.5em 0em;
 	text-align: center;
+  a {
+    color: #FFF6E4;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $orange;
+    text-decoration: underline;
+  }
 }
 
 .created-by {
   font-size: 14px;
   margin-top: 0.5em;
-}
-
-.created-by li {
-	float: left;
-	list-style: none;
-	margin: 3px 5px;
-	padding: 0.2em 0.5em;
+  li {
+  	float: left;
+  	list-style: none;
+  	margin: 3px 5px;
+  	padding: 0.2em 0.5em;
+  }
 }
 
 
