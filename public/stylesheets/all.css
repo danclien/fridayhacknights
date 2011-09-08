@@ -1,5 +1,4773 @@
 body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
 
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960px}.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12{display:inline;float:left;margin-left:10px;margin-right:10px}.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11{position:relative}.alpha{margin-left:0}.omega{margin-right:0}.container_12 .grid_1{width:60px}.container_12 .grid_2{width:140px}.container_12 .grid_3{width:220px}.container_12 .grid_4{width:300px}.container_12 .grid_5{width:380px}.container_12 .grid_6{width:460px}.container_12 .grid_7{width:540px}.container_12 .grid_8{width:620px}.container_12 .grid_9{width:700px}.container_12 .grid_10{width:780px}.container_12 .grid_11{width:860px}.container_12 .grid_12{width:940px}.container_12 .prefix_1{padding-left:80px}.container_12 .prefix_2{padding-left:160px}.container_12 .prefix_3{padding-left:240px}.container_12 .prefix_4{padding-left:320px}.container_12 .prefix_5{padding-left:400px}.container_12 .prefix_6{padding-left:480px}.container_12 .prefix_7{padding-left:560px}.container_12 .prefix_8{padding-left:640px}.container_12 .prefix_9{padding-left:720px}.container_12 .prefix_10{padding-left:800px}.container_12 .prefix_11{padding-left:880px}.container_12 .suffix_1{padding-right:80px}.container_12 .suffix_2{padding-right:160px}.container_12 .suffix_3{padding-right:240px}.container_12 .suffix_4{padding-right:320px}.container_12 .suffix_5{padding-right:400px}.container_12 .suffix_6{padding-right:480px}.container_12 .suffix_7{padding-right:560px}.container_12 .suffix_8{padding-right:640px}.container_12 .suffix_9{padding-right:720px}.container_12 .suffix_10{padding-right:800px}.container_12 .suffix_11{padding-right:880px}.container_12 .push_1{left:80px}.container_12 .push_2{left:160px}.container_12 .push_3{left:240px}.container_12 .push_4{left:320px}.container_12 .push_5{left:400px}.container_12 .push_6{left:480px}.container_12 .push_7{left:560px}.container_12 .push_8{left:640px}.container_12 .push_9{left:720px}.container_12 .push_10{left:800px}.container_12 .push_11{left:880px}.container_12 .pull_1{left:-80px}.container_12 .pull_2{left:-160px}.container_12 .pull_3{left:-240px}.container_12 .pull_4{left:-320px}.container_12 .pull_5{left:-400px}.container_12 .pull_6{left:-480px}.container_12 .pull_7{left:-560px}.container_12 .pull_8{left:-640px}.container_12 .pull_9{left:-720px}.container_12 .pull_10{left:-800px}.container_12 .pull_11{left:-880px}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container_12:before,.container_12:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container_12:after{clear:both}.clearfix,.container_12{zoom:1}
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
+/* `Widths
+----------------------------------------------------------------------------------------------------*/
+.input_tiny{width:50px;}
+.input_small{width:100px;}
+.input_medium{width:150px;}
+.input_large{width:200px;}
+.input_xlarge{width:250px;}
+.input_xxlarge{width:300px;}
+.input_full{width:100%;}
+/*
+Added via JS to <textarea> and class="input_full".
+Applies only to IE7. Other browsers don't need it.
+*/
+.input_full_wrap{display:block;padding-right:8px;}
+/* `UI Consistency
+----------------------------------------------------------------------------------------------------*/
+::-moz-focus-inner{border:0;padding:0;}
+input[type="search"]::-webkit-search-decoration{display:none;}
+input,
+button,
+select,
+textarea{margin:0;vertical-align:middle;}
+input[type="radio"],
+input[type="checkbox"]{position:relative;vertical-align:top;top:3px;/* IE8,IE9,IE10 */
+top:0\0;/* IE7 */
+*top:-3px;}
+/* iPad */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:1024px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:2px;}
+}
+/* iPhone 3 */
+@media (-webkit-min-device-pixel-ratio:1) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+/* iPhone 4 */
+@media (-webkit-min-device-pixel-ratio:2) and (max-device-width:480px){input[type="radio"],
+input[type="checkbox"]{vertical-align:baseline;top:0;}
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"]{-webkit-appearance:none;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background:#ddd url(../images/button.png) repeat-x;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ddd));background:-moz-linear-gradient(top center,#fff 0%,#ddd 100%);border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;/*
+Helvetica Neue present,because it works better
+for line-height on buttons than Arial,on OS X.
+*/
+font:bold 12px/1.3 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;outline:0;overflow:visible;padding:3px 10px;text-shadow:#fff 0 1px 1px;width:auto;/* IE7 */
+*padding-top:2px;*padding-bottom:0px;}
+button{/* IE7 */
+*padding-top:1px;*padding-bottom:1px;}
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]{-webkit-appearance:none;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;background-color:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;outline:0;padding:2px 3px;font-size:13px;/*
+Leaving out Helvetica Neue,to not throw off size="..."
+on inputs. Arial is more reliable,on Windows and OS X.
+*/
+font-family:Arial,'Liberation Sans',FreeSans,sans-serif;height:1.8em;/* IE7 */
+*padding-top:2px;*padding-bottom:1px;*height:auto;}
+/*
+Separate rule for Firefox.
+Separate rule for IE,too.
+Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder{color:#888;}
+input:-moz-placeholder,
+textarea:-moz-placeholder{color:#888;}
+input.placeholder_text,
+textarea.placeholder_text{color:#888;}
+:invalid{/*
+Suppress red glow that Firefox
+adds to form fields by default,
+even when user is still typing.
+*/
+-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{-moz-box-shadow:#06f 0 0 7px;-webkit-box-shadow:#06f 0 0 7px;box-shadow:#06f 0 0 7px;/* for Opera */
+z-index:1;}
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled]{background-color:#eee;}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled]{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#888;cursor:default;}
+textarea,
+select[size],
+select[multiple]{height:auto;}
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio:0){select{background-image:url(../images/select_arrow.gif);background-repeat:no-repeat;background-position:right center;padding-right:20px;}
+select[size],
+select[multiple]{background-image:none;padding:0;}
+::-webkit-validation-bubble-message{box-shadow:rgba(0,0,0,0.5) 0 0 5px;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#000));border:1px solid;border-color:#747474 #5e5e5e #4f4f4f;color:#fff;font:11px/1 'Lucida Grande',Arial,'Liberation Sans',FreeSans,sans-serif;padding:15px 15px 17px;text-shadow:#000 0 0 1px;}
+::-webkit-validation-bubble-arrow,
+::-webkit-validation-bubble-top-outer-arrow,
+::-webkit-validation-bubble-top-inner-arrow{display:none;}
+}
+textarea{min-height:40px;overflow:auto;resize:vertical;width:100%;}
+optgroup{color:#000;font-style:normal;font-weight:normal;}
+/* `IE6
+----------------------------------------------------------------------------------------------------*/
+/*
+Everything below this line is for IE6.
+Delete it if you don't support it! :)
+Classes are added dynamically via JS,
+because IE6 doesn't support attribute
+selectors:.ie6_button,.ie6_input,etc.
+Note:These style rules are somewhat
+duplicated because IE6 bombs out when
+it sees attribute selectors. Example:.ie6_button{This works in IE6.}
+.ie6_button,
+input[type=submit]{This doesn't work.}
+*/
+.ie6_button,
+* html button{background:#ddd url(../images/button.png) repeat-x;border:1px solid;border-color:#ddd #bbb #999;cursor:pointer;color:#333;font:bold 12px/1.2 Arial,sans-serif;padding:2px 10px 0px;overflow:visible;width:auto;}
+* html button{padding-top:1px;padding-bottom:1px;}
+.ie6_input,
+* html textarea,
+* html select{background:#fff;border:1px solid;border-color:#848484 #c1c1c1 #e1e1e1;color:#000;padding:2px 3px 1px;font-size:13px;font-family:Arial,sans-serif;vertical-align:top;}
+* html select{margin-top:1px;}
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled{color:#888;}
+.ie6_input_disabled{background:#eee;}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 50px;
+  /* .push must be the same height as .footer */
+}
+
+/* General */
+body {
+  background-color: #fff8ea;
+  border-top: 4px solid #f56006;
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  color: #372f2d;
+  font-size: 20px;
+  margin: 0px;
+}
+
+a {
+  color: #372f2d;
+}
+
+a:hover {
+  color: #f56006;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #372f2d;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  float: left;
+  height: 40px;
+}
+
+.site-nav {
+  float: left;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+.site-nav li {
+  float: left;
+  list-style: none;
+  margin: 0em 1.5em 0em 0em;
+}
+.site-nav ul {
+  margin: 0px 0px 0px 0px;
+  -webkit-padding-start: 0px;
+}
+.site-nav ul a {
+  color: #372f2d;
+  text-decoration: none;
+}
+.site-nav ul a:hover {
+  color: #f56006;
+}
+
+.account-nav {
+  float: right;
+}
+.account-nav li {
+  margin: 0em 0em 0em 1.5em;
+}
+
+.menu {
+  background-color: #fff8ea;
+  moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  z-index: 2;
+}
+
+.banner-image-holder {
+  background-image: url("/images/banner_bg.png");
+  z-index: 0;
+}
+
+.banner-image img {
+  height: 242px;
+  margin: 0.5em 0em 0em 0em;
+  width: 960px;
+}
+
+/* Contents */
+.contents {
+  -moz-box-shadow: -8px 0px 8px black;
+  /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0px 0px 8px #000;
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 8px #000;
+  /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #3d3735;
+}
+
+.image-gallery-row {
+  margin: 8px 0px 8px 0px;
+}
+
+.image-gallery-row a {
+  margin: 0px 5px 0px 5px;
+}
+
+.image-gallery-row img {
+  border: 8px solid #e0cca3;
+  max-height: 284px;
+  max-width: 284px;
+}
+
+.image-gallery-row a:hover img {
+  border-color: #f56006;
+}
+
+.image-gallery-row a:first-child {
+  margin-left: 0px;
+}
+
+.image-gallery-row a:last-child {
+  margin-right: 0px;
+}
+
+/* Footer */
+.footer {
+  text-shadow: #413e3e 1px 1px 1px;
+  background: #372f2d;
+  border-top: 2px solid #913904;
+  color: #FFF6E4;
+  font-family: helvetica, arial, clean, sans-serif;
+  padding: 0.75em 0em 0.5em 0em;
+  text-align: center;
+}
+.footer a {
+  color: #FFF6E4;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #f56006;
+  text-decoration: underline;
+}
+
+.created-by {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.created-by li {
+  float: left;
+  list-style: none;
+  margin: 3px 5px;
+  padding: 0.2em 0.5em;
+}
+
+/* Gallery */
+.gallery-img {
+  border: 8px solid #e0cca3;
+  max-width: 940px;
+}
+
+/* Form */
+.form-box {
+  margin: 1em auto 1em auto;
+  width: 300px;
+}
+.form-box input[type=text], .form-box input[type=email], .form-box input[type=password], .form-box input[type=submit] {
+  width: 300px;
+}
+
+.wide {
+  width: 600px;
+}
+.wide input[type=text], .wide input[type=email], .wide input[type=password], .wide input[type=submit] {
+  width: 600px;
+}
+
+.remember-me-box label {
+  margin-left: 0.5em;
+  position: relative;
+  top: -5px;
+}
+
+/* Other */
+.light-box {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background-color: #faf6ef;
+  border: 1px solid #e0cca3;
+  padding: 0 20px;
+}
+
+.tp {
+  padding-bottom: 20px;
+}
+
+.bp {
+  padding-bottom: 20px;
+}
+
+.sp {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-list {
+  padding: 0;
+  list-style: none;
+}
+.item-list a {
+  text-decoration: none;
+}
+.item-list li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.item-list li .content {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  padding: 0.2em 0.5em;
+  list-style: none;
+}
+.item-list li .content .icon {
+  margin: 7px 6px 0 0;
+}
+
+.divider {
+  border: 1px solid #c5bab8;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1 img.icon {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  margin: 2px 0 0 7px;
+  padding: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background: no-repeat;
+}
+
+.icon.person {
+  background-image: url(/images/icons/person.png);
+}
+
+.icon.folder {
+  background-image: url(/images/icons/folder.png);
+}
+
+.icon.file {
+  background-image: url(/images/icons/file.png);
+}
+
+.icon.zoom {
+  background-image: url(/images/icons/zoom.png);
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Projects */
+.title {
+  padding-bottom: 20px;
+}
+
+.project.light-box {
+  margin: 1em 0em 1em 0em;
+  padding: 20px;
+}
+.project.light-box h2 {
+  margin: 0px 0px 20px 0px;
+}
+.project.light-box h3 {
+  margin: 0px 0px 20px 0px;
+}
+
+.project.index a {
+  text-decoration: none;
+}
+.project.index .view {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #e7d6b6;
+  border: 1px solid #a2928e;
+  border: 1px solid #372f2d;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
+}
+.project.index .view .icon {
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.project.index .divider {
+  float: left;
+  height: 41px;
+  margin: -3px 12px 0 3px;
+  padding-top: 4px;
+}
+.project.index .description {
+  font-size: 0.9em;
+}
+.project.index .project-hackers ul.item-list li .content {
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+}
+
+.project.show .website h3 {
+  margin-bottom: 5px;
+}
+.project.show .activity {
+  padding-left: 10px;
+}
+.project.show .activity .checkin {
+  -moz-border-radius: 3px;
+  /* FF1-3.6 */
+  -webkit-border-radius: 3px;
+  /* Saf3-4, iOS 1-3.2, Android <1.6 */
+  border-radius: 3px;
+  /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+  background: #f2ead8;
+  border: 1px solid #a2928e;
+  padding: 8px;
+  width: 45%;
+  float: left;
+  margin-bottom: 3%;
+}
+.project.show .activity .checkin.l-col {
+  margin-right: 3%;
+}
+.project.show .activity .description .sig {
+  white-space: nowrap;
+}
+.project.show .activity .description .name {
+  font-size: 0.8em;
+}
+.project.show .activity .description .name a {
+  text-decoration: none;
+}
+.project.show .activity .description .date {
+  font-size: 0.6em;
+  font-family: helvetica, arial, clean, sans-serif;
+  color: #8b7772;
+}
+.project.show .activity .admin {
+  text-align: right;
+}
+.project.show .activity .admin input[name=delete_checkin] {
+  color: #fff;
+  text-shadow: #333 0 1px 1px;
+  background: #ff3019;
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+}
+.project.show .checkin-input-wrap h3 {
+  margin-bottom: 5px;
+}
+.project.show .checkin-input-wrap label {
+  font-size: 0.7em;
+  font-family: helvetica, arial, clean, sans-serif;
+}
+.project.show .checkin-input-wrap textarea {
+  height: 50px;
+  width: 373px;
+}
+.project.show .checkin-input-wrap input[type=submit] {
+  margin: 0 0 0 18px;
+  font-size: 30px;
+}
+.project.show .project-hackers li {
+  margin-bottom: 10px;
+}
+.project.show > .description {
+  margin-left: 0;
+}
+.project.show > .description h3 {
+  color: #8b7772;
+}
+
+
 /* `Widths
 ----------------------------------------------------------------------------------------------------*/
 .input_tiny{width:50px;}
