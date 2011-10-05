@@ -208,6 +208,14 @@ h1, h2, h3, h4, h5, h6 {
 	top: -5px;
 }
 
+/* Countdown */
+
+#ebcountdown {
+  .highlight {
+    background: none !important;
+  }
+}
+
 /* Other */
 
 .light-box { @include rounded; @include light-box; padding: 0 20px; }
